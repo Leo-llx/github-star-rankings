@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+output/
+*.egg-info/
+dist/
+.translation_cache.json

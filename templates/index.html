@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 星标排行榜</title>
+<style>
+{{ css }}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <a href="." class="logo">
+      <svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      GitHub 星标排行榜
+    </a>
+    <span class="header-meta">数据来源 GitHub API · {{ generated_at }}</span>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="filter-row">
+      <div class="filter-group filter-search">
+        <label for="search-input">搜索</label>
+        <input type="text" id="search-input" placeholder="搜索仓库名或描述..." autocomplete="off">
+      </div>
+      <div class="filter-group">
+        <label for="lang-select">编程语言</label>
+        <select id="lang-select">
+          <option value="">全部语言</option>
+          {% for lang in languages %}
+          {% if lang %}
+          <option value="{{ lang }}">{{ lang }}</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+      </div>
+      <div class="filter-group time-tabs">
+        <label>时间范围</label>
+        <div class="tab-group" id="time-tabs">
+          {% for key, label in time_ranges.items() %}
+          <button type="button" class="tab" data-time="{{ key }}">{{ label }}</button>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="filter-group">
+        <label>排序</label>
+        <div class="tab-group" id="sort-tabs">
+          <button type="button" class="tab active" data-sort="stars">⭐ 星标</button>
+          <button type="button" class="tab" data-sort="forks">🍴 Forks</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discovery Cards -->
+  <section class="discovery" id="discovery-section">
+    <div class="discovery-header">
+      <h2>🔍 随机发现</h2>
+      <button type="button" class="discovery-refresh" id="discovery-refresh" title="换一批">🔄 换一批</button>
+    </div>
+    <div class="discovery-cards" id="discovery-cards"></div>
+  </section>
+
+  <!-- Rankings Table -->
+  <section class="rankings">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-repo">仓库</th>
+            <th class="col-stars sortable" data-sort="stars">⭐ 星标 ▾</th>
+            <th class="col-lang">语言</th>
+            <th class="col-forks sortable" data-sort="forks">🍴 Forks</th>
+            <th class="col-desc hide-mobile">描述</th>
+          </tr>
+        </thead>
+        <tbody id="repo-tbody">
+        </tbody>
+      </table>
+    </div>
+    <div class="empty-state" id="empty-state" style="display:none">
+      <p>没有找到符合条件的仓库。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>由 <a href="https://github.com" target="_blank" rel="noopener">GitHub API</a> 驱动 · {{ generated_at }} 生成 ·
+    <a href="https://github.com/Leo-llx/github-star-rankings" target="_blank" rel="noopener">查看源码</a></p>
+  </div>
+</footer>
+
+<script>
+var ALL_REPOS = {{ repos | tojson | safe }};
+
+// GitHub language colors
+var LANG_COLORS = {
+  "Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "Go": "#00ADD8",
+  "Rust": "#dea584", "Java": "#b07219", "C++": "#f34b7d", "C": "#555555", "C#": "#178600",
+  "Ruby": "#701516", "Swift": "#F05138", "Kotlin": "#A97BFF", "PHP": "#4F5D95",
+  "R": "#198CE7", "Shell": "#89e051", "Vue": "#41b883", "HTML": "#e34c26", "CSS": "#563d7c",
+  "Dart": "#00B4AB", "Lua": "#000080", "Zig": "#ec915c", "Elixir": "#6e4a7e",
+  "Jupyter Notebook": "#DA5B0B", "Markdown": "#083fa1", "Scala": "#c22d40",
+  "Haskell": "#5e5086", "Clojure": "#db5855", "Erlang": "#B83998", "Julia": "#a270ba"
+};
+
+function fmt(n) { return n.toLocaleString('en-US'); }
+
+function escapeHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function daysAgo(dateStr, n) {
+  if (!dateStr) return false;
+  var d = new Date(dateStr + 'T00:00:00Z');
+  var now = new Date();
+  return (now - d) <= n * 86400000;
+}
+
+function langColor(lang) {
+  return LANG_COLORS[lang] || '#8b949e';
+}
+
+function langDot(lang) {
+  if (!lang || lang === 'Unknown') return '';
+  return '<span class="lang-dot" style="background-color:' + langColor(lang) + '"></span>';
+}
+
+// --- Filter & Sort ---
+
+var currentSort = 'stars';
+var currentTime = '{{ current_time_range }}';
+
+function getFilteredRepos() {
+  var lang = document.getElementById('lang-select').value;
+  var search = document.getElementById('search-input').value.toLowerCase().trim();
+
+  var filtered = ALL_REPOS.filter(function(r) {
+    if (lang && r.language !== lang) return false;
+    if (currentTime === 'daily')   return daysAgo(r.pushed_at, 1);
+    if (currentTime === 'weekly')  return daysAgo(r.pushed_at, 7);
+    if (currentTime === 'monthly') return daysAgo(r.pushed_at, 30);
+    return true;
+  });
+
+  if (search) {
+    filtered = filtered.filter(function(r) {
+      return r.name.toLowerCase().indexOf(search) !== -1 ||
+             (r.description || '').toLowerCase().indexOf(search) !== -1 ||
+             (r.description_cn || '').indexOf(search) !== -1;
+    });
+  }
+
+  filtered.sort(function(a, b) {
+    if (currentSort === 'forks') return b.forks - a.forks;
+    return b.stars - a.stars;
+  });
+
+  return filtered;
+}
+
+// --- Topics ---
+
+function renderTopics(topics) {
+  if (!topics || !topics.length) return '';
+  return '<span class="topics-inline">' + topics.map(function(t) {
+    return '<span class="topic-tag">' + escapeHtml(t) + '</span>';
+  }).join('') + '</span>';
+}
+
+// --- Expandable Row ---
+
+var expandedRow = null;
+
+function toggleExpand(repoEl, repo, i) {
+  // Collapse previous
+  if (expandedRow && expandedRow !== repoEl) {
+    expandedRow.classList.remove('expanded');
+    var prevDetail = expandedRow.nextElementSibling;
+    if (prevDetail && prevDetail.classList.contains('detail-row')) prevDetail.remove();
+  }
+
+  var existingDetail = repoEl.nextElementSibling;
+  if (existingDetail && existingDetail.classList.contains('detail-row')) {
+    repoEl.classList.remove('expanded');
+    existingDetail.remove();
+    expandedRow = null;
+    return;
+  }
+
+  repoEl.classList.add('expanded');
+  expandedRow = repoEl;
+
+  var detail = document.createElement('tr');
+  detail.className = 'detail-row';
+  detail.innerHTML = '<td colspan="6">' +
+    '<div class="detail-panel">' +
+      '<div class="detail-grid">' +
+        '<div class="detail-item"><span class="detail-label">创建时间</span><span>' + (repo.created_at || '—') + '</span></div>' +
+        '<div class="detail-item"><span class="detail-label">最近更新</span><span>' + (repo.pushed_at || '—') + '</span></div>' +
+        '<div class="detail-item"><span class="detail-label">Open Issues</span><span>' + fmt(repo.open_issues || 0) + '</span></div>' +
+        '<div class="detail-item"><span class="detail-label">星标</span><span>' + fmt(repo.stars) + '</span></div>' +
+        '<div class="detail-item"><span class="detail-label">Forks</span><span>' + fmt(repo.forks) + '</span></div>' +
+        '<div class="detail-item"><span class="detail-label">语言</span><span>' + langDot(repo.language) + escapeHtml(repo.language || '—') + '</span></div>' +
+      '</div>' +
+      (repo.topics && repo.topics.length ? '<div class="detail-topics"><span class="detail-label">Topics</span>' + renderTopics(repo.topics) + '</div>' : '') +
+      '<div class="detail-desc-full">' + escapeHtml(repo.description_cn || repo.description || '暂无描述') + '</div>' +
+      '<a href="' + escapeHtml(repo.url) + '" target="_blank" rel="noopener" class="detail-link">在 GitHub 上查看 →</a>' +
+    '</div>' +
+  '</td>';
+  repoEl.parentNode.insertBefore(detail, repoEl.nextSibling);
+}
+
+// --- Render Table ---
+
+function renderTable(repos) {
+  var tbody = document.getElementById('repo-tbody');
+  var empty = document.getElementById('empty-state');
+  expandedRow = null;
+
+  if (!repos.length) {
+    tbody.innerHTML = '';
+    empty.style.display = '';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = repos.map(function(r, i) {
+    var desc = escapeHtml(r.description_cn || r.description || '');
+    var descShort = desc.length > 100 ? desc.slice(0, 100) + '...' : desc;
+    var langTag = r.language && r.language !== 'Unknown'
+      ? langDot(r.language) + escapeHtml(r.language)
+      : '<span class="lang-unknown">—</span>';
+
+    return '<tr class="repo-row" onclick="toggleExpand(this, ALL_REPOS[' + ALL_REPOS.indexOf(r) + '], ' + i + ')" title="点击展开详情">' +
+      '<td class="col-rank"><span class="rank-badge' + (i < 3 ? ' top' + (i + 1) : '') + '">' + (i + 1) + '</span></td>' +
+      '<td class="col-repo">' +
+        '<a href="' + escapeHtml(r.url) + '" target="_blank" rel="noopener" class="repo-link" onclick="event.stopPropagation()">' +
+          '<img src="' + escapeHtml(r.avatar) + '&s=40" alt="" class="repo-avatar" loading="lazy" width="20" height="20">' +
+          '<span class="repo-name">' + escapeHtml(r.name) + '</span>' +
+        '</a>' +
+        '<p class="repo-desc-mobile hide-desktop">' + descShort + '</p>' +
+        (r.topics && r.topics.length ? '<span class="topics-inline hide-mobile">' + r.topics.slice(0, 3).map(function(t) { return '<span class="topic-tag">' + escapeHtml(t) + '</span>'; }).join('') + '</span>' : '') +
+      '</td>' +
+      '<td class="col-stars"><span class="star-count">' + fmt(r.stars) + '</span></td>' +
+      '<td class="col-lang">' + langTag + '</td>' +
+      '<td class="col-forks">' + fmt(r.forks) + '</td>' +
+      '<td class="col-desc hide-mobile">' + descShort + '</td>' +
+    '</tr>';
+  }).join('');
+}
+
+// --- Discovery Cards ---
+
+function shuffle(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+  }
+  return a;
+}
+
+function renderDiscovery() {
+  var container = document.getElementById('discovery-cards');
+  var pool = ALL_REPOS.filter(function(r) { return r.description || r.description_cn; });
+  if (pool.length < 3) pool = ALL_REPOS;
+  var picks = shuffle(pool).slice(0, 5);
+
+  container.innerHTML = picks.map(function(r) {
+    var desc = escapeHtml(r.description_cn || r.description || '');
+    var descShort = desc.length > 100 ? desc.slice(0, 100) + '...' : desc;
+    return '<div class="discovery-card" onclick="window.open(\'' + escapeHtml(r.url) + '\',\'_blank\')">' +
+      '<div class="discovery-card-top">' +
+        '<img src="' + escapeHtml(r.avatar) + '&s=48" alt="" class="discovery-avatar" loading="lazy" width="24" height="24">' +
+        '<div class="discovery-card-header">' +
+          '<span class="discovery-name">' + escapeHtml(r.name) + '</span>' +
+          '<span class="discovery-lang">' + langDot(r.language) + escapeHtml(r.language || 'Unknown') + '</span>' +
+        '</div>' +
+      '</div>' +
+      '<p class="discovery-desc">' + descShort + '</p>' +
+      '<div class="discovery-stats">' +
+        '<span>⭐ ' + fmt(r.stars) + '</span>' +
+        '<span>🍴 ' + fmt(r.forks) + '</span>' +
+      '</div>' +
+    '</div>';
+  }).join('');
+}
+
+// --- Apply ---
+
+function applyFilters() {
+  var repos = getFilteredRepos();
+  renderTable(repos);
+  var hash = 'lang=' + encodeURIComponent(document.getElementById('lang-select').value) +
+             '&time=' + currentTime + '&sort=' + currentSort;
+  window.location.hash = hash;
+}
+
+function restoreFromHash() {
+  var raw = window.location.hash.replace(/^#/, '');
+  var params = {};
+  raw.split('&').forEach(function(p) {
+    var parts = p.split('=');
+    if (parts.length === 2) params[parts[0]] = decodeURIComponent(parts[1]);
+  });
+  if (params.lang !== undefined) document.getElementById('lang-select').value = params.lang;
+  if (params.time) {
+    currentTime = params.time;
+    document.querySelectorAll('#time-tabs .tab').forEach(function(t) {
+      t.classList.toggle('active', t.getAttribute('data-time') === params.time);
+    });
+  }
+  if (params.sort) {
+    currentSort = params.sort;
+    document.querySelectorAll('#sort-tabs .tab').forEach(function(t) {
+      t.classList.toggle('active', t.getAttribute('data-sort') === params.sort);
+    });
+  }
+  applyFilters();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Search
+  var searchTimer;
+  document.getElementById('search-input').addEventListener('input', function() {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applyFilters, 200);
+  });
+
+  // Language
+  document.getElementById('lang-select').addEventListener('change', applyFilters);
+
+  // Time tabs
+  document.querySelectorAll('#time-tabs .tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('#time-tabs .tab').forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      currentTime = tab.getAttribute('data-time');
+      applyFilters();
+    });
+  });
+
+  // Sort tabs
+  document.querySelectorAll('#sort-tabs .tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('#sort-tabs .tab').forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      currentSort = tab.getAttribute('data-sort');
+      applyFilters();
+    });
+  });
+
+  // Discovery refresh
+  document.getElementById('discovery-refresh').addEventListener('click', function(e) {
+    e.stopPropagation();
+    renderDiscovery();
+  });
+
+  // Init active tab
+  var defaultTab = document.querySelector('#time-tabs .tab[data-time="' + currentTime + '"]');
+  if (defaultTab) defaultTab.classList.add('active');
+  else document.querySelector('#time-tabs .tab').classList.add('active');
+
+  // Initial render
+  if (window.location.hash) {
+    restoreFromHash();
+  } else {
+    applyFilters();
+  }
+  renderDiscovery();
+});
+</script>
+</body>
+</html>
