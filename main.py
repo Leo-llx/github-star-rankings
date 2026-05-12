@@ -12,9 +12,30 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import certifi
 import requests
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
+
+# Use certifi CA bundle; fall back to verify=False when network intercepts SSL
+_verify = certifi.where()
+_good = False
+try:
+    import socket as _socket, ssl as _ssl
+    _ctx = _ssl.create_default_context(cafile=_verify)
+    _s = _socket.create_connection(("api.github.com", 443), timeout=5)
+    _ctx.wrap_socket(_s, server_hostname="api.github.com").close()
+    _good = True
+except Exception:
+    pass
+if not _good and not os.environ.get("SSL_NO_VERIFY"):
+    import urllib3
+    urllib3.disable_warnings()
+    _verify = False
+    print("[warn] SSL verify disabled (network interception detected)")
+
+_session = requests.Session()
+_session.verify = _verify
 
 BASE_DIR = Path(__file__).resolve().parent
 TEMPLATES_DIR = BASE_DIR / "templates"
@@ -69,7 +90,7 @@ def fetch_repos(token: str, query: str, per_page: int, pages: int) -> list[dict]
     all_items = []
     for page in range(1, pages + 1):
         params = {"q": query, "sort": "stars", "order": "desc", "per_page": per_page, "page": page}
-        resp = requests.get(SEARCH_ENDPOINT, headers=headers, params=params, timeout=30)
+        resp = _session.get(SEARCH_ENDPOINT, headers=headers, params=params, timeout=30)
 
         if resp.status_code == 403 and "rate limit" in resp.text.lower():
             print("GitHub API rate limit exceeded. Set GITHUB_TOKEN in .env for higher limits.")
@@ -154,7 +175,7 @@ def translate_text(text: str, cache: dict) -> str:
 
 def _translate_mymemory(text: str) -> str:
     url = "https://api.mymemory.translated.net/get"
-    resp = requests.get(url, params={"q": text, "langpair": "en|zh-CN"}, timeout=15)
+    resp = _session.get(url, params={"q": text, "langpair": "en|zh-CN"}, timeout=15)
     if resp.status_code == 200:
         data = resp.json()
         translated = data.get("responseData", {}).get("translatedText", "")
@@ -165,7 +186,7 @@ def _translate_mymemory(text: str) -> str:
 
 def _translate_google(text: str) -> str:
     url = "https://translate.googleapis.com/translate_a/single"
-    resp = requests.get(url, params={
+    resp = _session.get(url, params={
         "client": "gtx", "sl": "en", "tl": "zh-CN", "dt": "t", "q": text,
     }, timeout=10)
     if resp.status_code == 200:
