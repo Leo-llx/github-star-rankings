@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
         run: |
-          python main.py --output output/index.html --pages 5
+          python main.py --output output/index.html --pages 10 --per-page 100
 
       - uses: actions/configure-pages@v4
 
