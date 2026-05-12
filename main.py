@@ -183,7 +183,7 @@ def translate_descriptions(repos: list[dict]) -> None:
             continue
         print(f"  Translating [{i + 1}/{total}] {repo['name']}...")
         repo["description_cn"] = translate_text(desc, cache)
-        time.sleep(0.3)  # be gentle to the free API
+        time.sleep(0.15)  # be gentle to the free API
     save_translation_cache(cache)
 
 

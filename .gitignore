@@ -4,4 +4,3 @@ __pycache__/
 output/
 *.egg-info/
 dist/
-.translation_cache.json
