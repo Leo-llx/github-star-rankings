@@ -346,12 +346,14 @@ function openDetail(name) {
       }).join('') + '</div>' +
     '</div>' : '') +
 
-    // README embed
+    // README
     '<div class="dp-section">' +
       '<h2>README</h2>' +
       '<div class="dp-readme-wrap">' +
-        '<iframe src="' + esc(repo.url) + '#readme" class="dp-readme-iframe" loading="lazy" sandbox="allow-scripts allow-same-origin" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+40)+\'px\'"></iframe>' +
-        '<p class="dp-readme-fallback">若无法嵌入，请<a href="' + esc(repo.url) + '#readme" target="_blank" rel="noopener">直接查看 GitHub README</a></p>' +
+        '<p class="dp-readme-info">GitHub 不允许嵌入外部页面，请在新标签页查看</p>' +
+        '<a href="' + esc(repo.url) + '#readme" target="_blank" rel="noopener" class="dp-readme-btn">在 GitHub 查看 README &rarr;</a>' +
+      '</div>' +
+    '</div>' +
       '</div>' +
     '</div>' +
 
