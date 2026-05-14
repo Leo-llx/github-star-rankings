@@ -250,9 +250,11 @@ def render_html(repos: list[dict], filters: dict, languages: list[str]) -> str:
     env = Environment(loader=FileSystemLoader([str(TEMPLATES_DIR), str(BASE_DIR)]), autoescape=True)
     template = env.get_template("index.html")
     css_content = (BASE_DIR / "static" / "style.css").read_text(encoding="utf-8")
+    marked_js = (BASE_DIR / "static" / "marked.min.js").read_text(encoding="utf-8")
     return template.render(
         repos=repos,
         css=css_content,
+        marked_js=marked_js,
         languages=languages,
         current_language=filters["language"],
         current_time_range=filters["time_range"],

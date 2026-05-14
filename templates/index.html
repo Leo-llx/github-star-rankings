@@ -7,7 +7,7 @@
 <style>
 {{ css }}
 </style>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>{{ marked_js | safe }}</script>
 </head>
 <body>
 <header class="header">
@@ -417,36 +417,24 @@ function loadReadme(repo) {
     }
   }
 
-  // Try GitHub API first
-  var apiUrl = 'https://api.github.com/repos/' + owner + '/' + repoName + '/readme';
-  fetch(apiUrl, { headers: { Accept: 'application/vnd.github.v3+json' } })
-    .then(function(r) {
-      if (!r.ok) throw new Error('API failed');
-      return r.json();
-    })
-    .then(function(data) {
-      var content = data.content;
-      var decoded = atob(content.replace(/\s/g, ''));
-      render(decoded);
-    })
+  // Try raw.githubusercontent.com first (no rate limit), then API
+  function tryRaw(branch) {
+    return fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/' + branch + '/README.md')
+      .then(function(r) { return r.ok ? r.text() : Promise.reject(); });
+  }
+  tryRaw('HEAD')
+    .then(function(md) { render(md); })
+    .catch(function() { return tryRaw('main'); })
+    .then(function(md) { if (md) render(md); else return Promise.reject(); })
+    .catch(function() { return tryRaw('master'); })
+    .then(function(md) { if (md) render(md); else return Promise.reject(); })
     .catch(function() {
-      // Fallback: raw.githubusercontent.com
-      fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/HEAD/README.md')
-        .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
-        .then(function(md) { render(md); })
-        .catch(function() {
-          // Last try: main branch
-          fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/main/README.md')
-            .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
-            .then(function(md) { render(md); })
-            .catch(function() {
-              // Try master branch
-              fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/master/README.md')
-                .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
-                .then(function(md) { render(md); })
-                .catch(showError);
-            });
-        });
+      // Fallback: GitHub API
+      fetch('https://api.github.com/repos/' + owner + '/' + repoName + '/readme',
+        { headers: { Accept: 'application/vnd.github.v3+json' } })
+        .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function(data) { render(atob(data.content.replace(/\s/g, ''))); })
+        .catch(showError);
     });
 }
 
