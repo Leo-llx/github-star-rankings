@@ -227,11 +227,18 @@ function renderTable(repos) {
     if (r.star_delta_7d > 0) {
       deltaHtml = '<span class="velocity-up"> +' + fmt(r.star_delta_7d) + '</span>';
     }
+    // Demo indicator
+    var demoIcon = '';
+    var hasDemo = (r.topics || []).some(function(t) { return ['website','demo','playground','web-app','webapp'].indexOf(t.toLowerCase()) !== -1; });
+    var hasUrl = /https?:\/\/\S+/.test(r.description || '');
+    if (hasDemo || hasUrl) {
+      demoIcon = ' <span class="demo-indicator" title="有在线演示">▶</span>';
+    }
     return '<tr class="repo-row" data-repo="' + esc(r.name) + '" onclick="openDetail(\'' + esc(r.name) + '\')">' +
       '<td class="col-rank"><span class="rank-badge' + (i < 3 ? ' r' + (i+1) : '') + '">' + (i + 1) + '</span></td>' +
       '<td class="col-repo">' +
         '<a href="' + esc(r.url) + '" target="_blank" rel="noopener" class="repo-link" onclick="event.stopPropagation()">' +
-          '<img src="' + esc(r.avatar) + '&s=36" alt="" class="repo-avatar" loading="lazy">' + esc(r.name) +
+          '<img src="' + esc(r.avatar) + '&s=36" alt="" class="repo-avatar" loading="lazy">' + esc(r.name) + demoIcon +
         '</a>' +
         '<p class="repo-desc-mobile hide-desktop">' + descShort + '</p>' +
       '</td>' +
@@ -542,6 +549,31 @@ document.addEventListener('DOMContentLoaded', function() {
   var defaultTab = document.querySelector('#time-tabs .tab[data-time="' + currentTime + '"]');
   if (defaultTab) defaultTab.classList.add('active');
   else document.querySelector('#time-tabs .tab').classList.add('active');
+
+  // Tooltip system (floating in body, avoids overflow clipping)
+  var tooltipEl = document.createElement('div');
+  tooltipEl.className = 'tooltip-popup';
+  document.body.appendChild(tooltipEl);
+
+  document.addEventListener('mouseover', function(e) {
+    var tip = e.target.closest('.term-tip');
+    if (!tip) return;
+    var text = tip.getAttribute('data-tip');
+    if (!text) return;
+    tooltipEl.textContent = text;
+    tooltipEl.classList.add('show');
+  });
+  document.addEventListener('mouseout', function(e) {
+    if (e.target.closest('.term-tip')) tooltipEl.classList.remove('show');
+  });
+  document.addEventListener('mousemove', function(e) {
+    if (!tooltipEl.classList.contains('show')) return;
+    var x = e.clientX + 14, y = e.clientY - 36;
+    if (y < 4) y = e.clientY + 20;
+    if (x + tooltipEl.offsetWidth > window.innerWidth - 8) x = window.innerWidth - tooltipEl.offsetWidth - 8;
+    tooltipEl.style.left = x + 'px';
+    tooltipEl.style.top = y + 'px';
+  });
 
   if (window.location.hash) { restoreFromHash(); }
   else { applyFilters(); }
