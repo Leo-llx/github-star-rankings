@@ -999,5 +999,7 @@
   "Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required.": "适用于现代浏览器和触摸设备的可重新排序的拖放列表。不需要 jQuery 或框架。",
   "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.": "自主编码代理作为SDK、IDE扩展或CLI助手。",
   "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG": "📑 PageIndex ：无矢量、基于推理的RAG的文档索引",
-  "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.": "黑曜石的特工技能。教您的代理使用Markdown、Bases、JSON Canvas和使用CLI。"
+  "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.": "黑曜石的特工技能。教您的代理使用Markdown、Bases、JSON Canvas和使用CLI。",
+  "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.": "适用于本地LLM的开源桌面应用程序。文本、视觉、工具调用、OpenAI/Anthropic兼容的API。100%私有。",
+  "Natural Language Processing for the next decade. Tokenization, Part-of-Speech Tagging, Named Entity Recognition, Syntactic & Semantic Dependency Parsing, Document Classification": "未来十年的自然语言处理。标记化、词性标记、命名实体识别、句法和语义依赖解析、文档分类"
 }
