@@ -19,7 +19,7 @@
   </div>
 </header>
 
-<main class="container">
+<main class="container" id="main-content">
 
   <section class="filters">
     <div class="filter-row">
@@ -88,11 +88,16 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer" id="main-footer">
   <div class="container">
     <p>数据来自 <a href="https://docs.github.com/en/rest" target="_blank" rel="noopener">GitHub API</a> &middot; <a href="https://github.com/Leo-llx/github-star-rankings" target="_blank" rel="noopener">源代码</a></p>
   </div>
 </footer>
+
+<!-- Detail overlay -->
+<div class="detail-overlay" id="detail-overlay">
+  <div class="detail-container" id="detail-container"></div>
+</div>
 
 <script>
 var ALL_REPOS = {{ repos | tojson | safe }};
@@ -123,66 +128,45 @@ var CATEGORIES = [
 ];
 
 function fmt(n) { return n.toLocaleString('en-US'); }
-
-function escapeHtml(s) {
+function esc(s) {
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-
-function daysAgo(dateStr, n) {
-  if (!dateStr) return false;
-  return (Date.now() - new Date(dateStr + 'T00:00:00Z')) <= n * 86400000;
+function daysAgo(d, n) {
+  if (!d) return false;
+  return (Date.now() - new Date(d + 'T00:00:00Z')) <= n * 86400000;
+}
+function langColor(l) { return LANG_COLORS[l] || '#8b949e'; }
+function langDot(l) {
+  if (!l || l === 'Unknown') return '';
+  return '<span class="lang-dot" style="background-color:' + langColor(l) + '"></span>';
 }
 
-function langColor(lang) { return LANG_COLORS[lang] || '#8b949e'; }
-
-function langDot(lang) {
-  if (!lang || lang === 'Unknown') return '';
-  return '<span class="lang-dot" style="background-color:' + langColor(lang) + '"></span>';
-}
-
-// --- Category filter ---
-
-var currentCategory = '';
-
-function matchCategory(repo, catValue) {
-  if (!catValue) return true;
-  var cat = CATEGORIES.find(function(c) { return c.value === catValue; });
-  if (!cat || !repo.topics) return false;
-  return repo.topics.some(function(t) {
-    return cat.topics.indexOf(t.toLowerCase()) !== -1;
-  });
-}
-
-function buildCategorySelect() {
-  // Collect available categories from the data
-  var sel = document.getElementById('category-select');
-  var counts = {};
-  ALL_REPOS.forEach(function(r) {
-    if (!r.topics) return;
-    CATEGORIES.forEach(function(cat) {
-      if (matchCategory(r, cat.value)) {
-        counts[cat.value] = (counts[cat.value] || 0) + 1;
-      }
-    });
-  });
-  CATEGORIES.forEach(function(cat) {
-    var cnt = counts[cat.value] || 0;
-    var opt = document.createElement('option');
-    opt.value = cat.value;
-    opt.textContent = cat.label + ' (' + cnt + ')';
-    sel.appendChild(opt);
-  });
-}
-
-// --- Filter logic ---
+// --- Data access ---
 
 var currentSort = 'stars';
 var currentTime = '{{ current_time_range }}';
+var currentCategory = '';
+var currentDetailRepo = null;
+
+function findRepo(name) {
+  for (var i = 0; i < ALL_REPOS.length; i++) {
+    if (ALL_REPOS[i].name === name) return ALL_REPOS[i];
+  }
+  return null;
+}
+
+// --- Filters ---
+
+function matchCategory(repo, catVal) {
+  if (!catVal) return true;
+  var cat = CATEGORIES.find(function(c) { return c.value === catVal; });
+  if (!cat || !repo.topics) return false;
+  return repo.topics.some(function(t) { return cat.topics.indexOf(t.toLowerCase()) !== -1; });
+}
 
 function getFilteredRepos() {
   var lang = document.getElementById('lang-select').value;
   var search = document.getElementById('search-input').value.toLowerCase().trim();
-
   var filtered = ALL_REPOS.filter(function(r) {
     if (lang && r.language !== lang) return false;
     if (currentCategory && !matchCategory(r, currentCategory)) return false;
@@ -191,7 +175,6 @@ function getFilteredRepos() {
     if (currentTime === 'monthly') return daysAgo(r.pushed_at, 30);
     return true;
   });
-
   if (search) {
     filtered = filtered.filter(function(r) {
       return r.name.toLowerCase().indexOf(search) !== -1 ||
@@ -199,100 +182,48 @@ function getFilteredRepos() {
              (r.description_cn || '').indexOf(search) !== -1;
     });
   }
-
   filtered.sort(function(a, b) {
     return currentSort === 'forks' ? b.forks - a.forks : b.stars - a.stars;
   });
-
   return filtered;
 }
 
-// --- Topics rendering ---
+// --- Table ---
 
-function renderTopics(topics) {
-  if (!topics || !topics.length) return '';
-  return topics.map(function(t) {
-    return '<span class="topic-tag">' + escapeHtml(t) + '</span>';
-  }).join(' ');
+function buildCategorySelect() {
+  var sel = document.getElementById('category-select');
+  var counts = {};
+  ALL_REPOS.forEach(function(r) {
+    if (!r.topics) return;
+    CATEGORIES.forEach(function(cat) {
+      if (matchCategory(r, cat.value)) counts[cat.value] = (counts[cat.value] || 0) + 1;
+    });
+  });
+  CATEGORIES.forEach(function(cat) {
+    var opt = document.createElement('option');
+    opt.value = cat.value;
+    opt.textContent = cat.label + ' (' + (counts[cat.value] || 0) + ')';
+    sel.appendChild(opt);
+  });
 }
-
-// --- Expandable row ---
-
-var expandedRow = null;
-
-function toggleExpand(repoEl, repo, i) {
-  if (expandedRow && expandedRow !== repoEl) {
-    expandedRow.classList.remove('expanded');
-    var pd = expandedRow.nextElementSibling;
-    if (pd && pd.classList.contains('detail-row')) pd.remove();
-  }
-
-  var existing = repoEl.nextElementSibling;
-  if (existing && existing.classList.contains('detail-row')) {
-    repoEl.classList.remove('expanded');
-    existing.remove();
-    expandedRow = null;
-    return;
-  }
-
-  repoEl.classList.add('expanded');
-  expandedRow = repoEl;
-
-  var topicsSection = repo.topics && repo.topics.length
-    ? '<div class="detail-section"><div class="detail-label">Topics</div><div class="topics-inline">' + renderTopics(repo.topics) + '</div></div>'
-    : '';
-
-  var detail = document.createElement('tr');
-  detail.className = 'detail-row';
-  detail.innerHTML = '<td colspan="6"><div class="detail-panel">' +
-    '<div class="detail-grid">' +
-      '<div class="detail-item"><span class="detail-label">创建时间</span><span class="detail-val">' + (repo.created_at || '—') + '</span></div>' +
-      '<div class="detail-item"><span class="detail-label">最近更新</span><span class="detail-val">' + (repo.pushed_at || '—') + '</span></div>' +
-      '<div class="detail-item"><span class="detail-label">Open Issues</span><span class="detail-val">' + fmt(repo.open_issues || 0) + '</span></div>' +
-      '<div class="detail-item"><span class="detail-label">星标</span><span class="detail-val">' + fmt(repo.stars) + '</span></div>' +
-      '<div class="detail-item"><span class="detail-label">Forks</span><span class="detail-val">' + fmt(repo.forks) + '</span></div>' +
-      '<div class="detail-item"><span class="detail-label">语言</span><span class="detail-val">' + langDot(repo.language) + escapeHtml(repo.language || '—') + '</span></div>' +
-    '</div>' +
-    topicsSection +
-    '<div class="detail-desc">' + escapeHtml(repo.description_cn || repo.description || '暂无描述') + '</div>' +
-    '<a href="' + escapeHtml(repo.url) + '" target="_blank" rel="noopener" class="detail-link">GitHub &rarr;</a>' +
-  '</div></td>';
-  repoEl.parentNode.insertBefore(detail, repoEl.nextSibling);
-}
-
-// --- Render table ---
 
 function renderTable(repos) {
   var tbody = document.getElementById('repo-tbody');
   var empty = document.getElementById('empty-state');
-  expandedRow = null;
-
-  if (!repos.length) {
-    tbody.innerHTML = '';
-    empty.style.display = '';
-    return;
-  }
+  if (!repos.length) { tbody.innerHTML = ''; empty.style.display = ''; return; }
   empty.style.display = 'none';
-
   tbody.innerHTML = repos.map(function(r, i) {
-    var desc = escapeHtml(r.description_cn || r.description || '');
+    var desc = esc(r.description_cn || r.description || '');
     var descShort = desc.length > 90 ? desc.slice(0, 90) + '...' : desc;
     var langCell = r.language && r.language !== 'Unknown'
-      ? langDot(r.language) + escapeHtml(r.language)
-      : '<span class="no-lang">—</span>';
-    var topics = r.topics && r.topics.length
-      ? '<div class="topics-inline hide-mobile">' + renderTopics(r.topics.slice(0, 3)) + '</div>'
-      : '';
-
-    return '<tr class="repo-row" onclick="toggleExpand(this, ALL_REPOS[' + ALL_REPOS.indexOf(r) + '], ' + i + ')">' +
+      ? langDot(r.language) + esc(r.language) : '<span class="no-lang">—</span>';
+    return '<tr class="repo-row" data-repo="' + esc(r.name) + '" onclick="openDetail(\'' + esc(r.name) + '\')">' +
       '<td class="col-rank"><span class="rank-badge' + (i < 3 ? ' r' + (i+1) : '') + '">' + (i + 1) + '</span></td>' +
       '<td class="col-repo">' +
-        '<a href="' + escapeHtml(r.url) + '" target="_blank" rel="noopener" class="repo-link" onclick="event.stopPropagation()">' +
-          '<img src="' + escapeHtml(r.avatar) + '&s=36" alt="" class="repo-avatar" loading="lazy">' +
-          escapeHtml(r.name) +
+        '<a href="' + esc(r.url) + '" target="_blank" rel="noopener" class="repo-link" onclick="event.stopPropagation()">' +
+          '<img src="' + esc(r.avatar) + '&s=36" alt="" class="repo-avatar" loading="lazy">' + esc(r.name) +
         '</a>' +
         '<p class="repo-desc-mobile hide-desktop">' + descShort + '</p>' +
-        topics +
       '</td>' +
       '<td class="col-stars"><span class="num">' + fmt(r.stars) + '</span></td>' +
       '<td class="col-lang">' + langCell + '</td>' +
@@ -302,75 +233,187 @@ function renderTable(repos) {
   }).join('');
 }
 
-// --- Discovery cards ---
+// --- Discovery ---
 
-function shuffle(arr) {
-  var a = arr.slice();
-  for (var i = a.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
-  }
-  return a;
+function shuffle(a) {
+  var b = a.slice();
+  for (var i = b.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = b[i]; b[i] = b[j]; b[j] = t; }
+  return b;
 }
 
 function renderDiscovery() {
-  var container = document.getElementById('discovery-cards');
   var pool = ALL_REPOS.filter(function(r) { return r.description || r.description_cn; });
   if (pool.length < 3) pool = ALL_REPOS;
   var picks = shuffle(pool).slice(0, 5);
-
-  container.innerHTML = picks.map(function(r) {
-    var desc = escapeHtml(r.description_cn || r.description || '');
-    return '<div class="discovery-card" onclick="window.open(\'' + escapeHtml(r.url) + '\',\'_blank\')">' +
+  document.getElementById('discovery-cards').innerHTML = picks.map(function(r) {
+    var desc = esc(r.description_cn || r.description || '');
+    return '<div class="discovery-card" onclick="openDetail(\'' + esc(r.name) + '\')">' +
       '<div class="discovery-card-top">' +
-        '<img src="' + escapeHtml(r.avatar) + '&s=40" alt="" class="discovery-avatar" loading="lazy">' +
-        '<span class="discovery-name">' + escapeHtml(r.name) + '</span>' +
+        '<img src="' + esc(r.avatar) + '&s=40" alt="" class="discovery-avatar" loading="lazy">' +
+        '<span class="discovery-name">' + esc(r.name) + '</span>' +
       '</div>' +
       '<p class="discovery-desc">' + (desc.length > 100 ? desc.slice(0, 100) + '...' : desc) + '</p>' +
       '<div class="discovery-stats">' +
-        '<span>' + langDot(r.language) + escapeHtml(r.language || '—') + '</span>' +
+        '<span>' + langDot(r.language) + esc(r.language || '—') + '</span>' +
         '<span>' + fmt(r.stars) + ' ★</span>' +
       '</div>' +
     '</div>';
   }).join('');
 }
 
+// --- Detail page ---
+
+function getRelated(repo, count) {
+  if (!repo.topics || !repo.topics.length) return [];
+  var scored = [];
+  for (var i = 0; i < ALL_REPOS.length; i++) {
+    var other = ALL_REPOS[i];
+    if (other.name === repo.name || !other.topics) continue;
+    var overlap = 0;
+    for (var j = 0; j < repo.topics.length; j++) {
+      if (other.topics.indexOf(repo.topics[j]) !== -1) overlap++;
+    }
+    if (overlap >= 1) scored.push({ repo: other, score: overlap });
+  }
+  scored.sort(function(a, b) { return b.score - a.score || b.repo.stars - a.repo.stars; });
+  return scored.slice(0, count || 6);
+}
+
+function openDetail(name) {
+  var repo = findRepo(name);
+  if (!repo) return;
+  currentDetailRepo = repo;
+
+  var desc = esc(repo.description_cn || repo.description || '暂无描述');
+  var descEn = repo.description ? esc(repo.description) : '';
+  var related = getRelated(repo, 8);
+
+  var html = '<div class="detail-page">' +
+    // Header
+    '<div class="dp-header">' +
+      '<button class="dp-back" id="dp-back">&larr; 返回排行榜</button>' +
+      '<a href="' + esc(repo.url) + '" target="_blank" rel="noopener" class="dp-gh-link">GitHub 主页 ↗</a>' +
+    '</div>' +
+
+    // Hero
+    '<div class="dp-hero">' +
+      '<img src="' + esc(repo.avatar) + '&s=80" alt="" class="dp-avatar">' +
+      '<div class="dp-hero-body">' +
+        '<h1 class="dp-name">' + esc(repo.name) + '</h1>' +
+        '<div class="dp-lang">' + langDot(repo.language) + esc(repo.language || 'Unknown') + '</div>' +
+        '<div class="dp-stats">' +
+          '<div class="dp-stat"><span class="dp-stat-num">' + fmt(repo.stars) + '</span><span class="dp-stat-label">星标</span></div>' +
+          '<div class="dp-stat"><span class="dp-stat-num">' + fmt(repo.forks) + '</span><span class="dp-stat-label">Forks</span></div>' +
+          '<div class="dp-stat"><span class="dp-stat-num">' + fmt(repo.open_issues || 0) + '</span><span class="dp-stat-label">Issues</span></div>' +
+          '<div class="dp-stat"><span class="dp-stat-num">#' + (ALL_REPOS.indexOf(repo) + 1) + '</span><span class="dp-stat-label">排名</span></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+
+    // Description
+    '<div class="dp-section">' +
+      '<h2>简介</h2>' +
+      '<p class="dp-desc">' + desc + '</p>' +
+      (descEn && descEn !== desc ? '<p class="dp-desc-en">' + descEn + '</p>' : '') +
+    '</div>' +
+
+    // Topics
+    (repo.topics && repo.topics.length ? '<div class="dp-section">' +
+      '<h2>Topics</h2>' +
+      '<div class="dp-topics">' + repo.topics.map(function(t) { return '<span class="topic-tag">' + esc(t) + '</span>'; }).join(' ') + '</div>' +
+    '</div>' : '') +
+
+    // Meta
+    '<div class="dp-section">' +
+      '<h2>信息</h2>' +
+      '<div class="dp-meta-grid">' +
+        '<div class="dp-meta"><span>创建时间</span><strong>' + (repo.created_at || '—') + '</strong></div>' +
+        '<div class="dp-meta"><span>最近更新</span><strong>' + (repo.pushed_at || '—') + '</strong></div>' +
+        '<div class="dp-meta"><span>Open Issues</span><strong>' + fmt(repo.open_issues || 0) + '</strong></div>' +
+      '</div>' +
+    '</div>' +
+
+    // Related
+    (related.length ? '<div class="dp-section">' +
+      '<h2>相关仓库</h2>' +
+      '<div class="dp-related">' + related.map(function(item) {
+        var r = item.repo;
+        return '<div class="dp-related-card" onclick="openDetail(\'' + esc(r.name) + '\')">' +
+          '<img src="' + esc(r.avatar) + '&s=32" alt="" class="dp-related-avatar">' +
+          '<span class="dp-related-name">' + esc(r.name) + '</span>' +
+          '<span class="dp-related-stars">' + fmt(r.stars) + ' ★</span>' +
+        '</div>';
+      }).join('') + '</div>' +
+    '</div>' : '') +
+
+    // README embed
+    '<div class="dp-section">' +
+      '<h2>README</h2>' +
+      '<div class="dp-readme-wrap">' +
+        '<iframe src="' + esc(repo.url) + '#readme" class="dp-readme-iframe" loading="lazy" sandbox="allow-scripts allow-same-origin" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+40)+\'px\'"></iframe>' +
+        '<p class="dp-readme-fallback">若无法嵌入，请<a href="' + esc(repo.url) + '#readme" target="_blank" rel="noopener">直接查看 GitHub README</a></p>' +
+      '</div>' +
+    '</div>' +
+
+  '</div>';
+
+  document.getElementById('detail-container').innerHTML = html;
+  document.getElementById('detail-overlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+
+  document.getElementById('dp-back').addEventListener('click', closeDetail);
+
+  window.location.hash = 'repo=' + encodeURIComponent(repo.name);
+}
+
+function closeDetail() {
+  document.getElementById('detail-overlay').classList.remove('active');
+  document.body.style.overflow = '';
+  currentDetailRepo = null;
+  window.location.hash = buildFilterHash();
+}
+
+function buildFilterHash() {
+  return 'lang=' + encodeURIComponent(document.getElementById('lang-select').value) +
+         '&cat=' + encodeURIComponent(currentCategory) +
+         '&time=' + currentTime + '&sort=' + currentSort;
+}
+
 // --- Apply ---
 
 function applyFilters() {
   renderTable(getFilteredRepos());
-  var hash = 'cat=' + encodeURIComponent(currentCategory) +
-             '&lang=' + encodeURIComponent(document.getElementById('lang-select').value) +
-             '&time=' + currentTime + '&sort=' + currentSort;
-  window.location.hash = hash;
+  if (!currentDetailRepo) window.location.hash = buildFilterHash();
 }
 
 function restoreFromHash() {
   var raw = window.location.hash.replace(/^#/, '');
+  // Check if it's a detail page hash
+  if (raw.indexOf('repo=') === 0) {
+    var repoName = decodeURIComponent(raw.slice(5));
+    var repo = findRepo(repoName);
+    if (repo) { openDetail(repoName); return; }
+  }
+  // Otherwise it's filter params
   var params = {};
   raw.split('&').forEach(function(p) {
     var parts = p.split('=');
     if (parts.length === 2) params[parts[0]] = decodeURIComponent(parts[1]);
   });
   if (params.lang !== undefined) document.getElementById('lang-select').value = params.lang;
-  if (params.cat !== undefined) {
-    currentCategory = params.cat;
-    document.getElementById('category-select').value = params.cat;
-  }
+  if (params.cat !== undefined) { currentCategory = params.cat; document.getElementById('category-select').value = params.cat; }
   if (params.time) {
     currentTime = params.time;
-    document.querySelectorAll('#time-tabs .tab').forEach(function(t) {
-      t.classList.toggle('active', t.getAttribute('data-time') === params.time);
-    });
+    document.querySelectorAll('#time-tabs .tab').forEach(function(t) { t.classList.toggle('active', t.getAttribute('data-time') === params.time); });
   }
   if (params.sort) {
     currentSort = params.sort;
-    document.querySelectorAll('#sort-tabs .tab').forEach(function(t) {
-      t.classList.toggle('active', t.getAttribute('data-sort') === params.sort);
-    });
+    document.querySelectorAll('#sort-tabs .tab').forEach(function(t) { t.classList.toggle('active', t.getAttribute('data-sort') === params.sort); });
   }
   applyFilters();
 }
+
+// --- Events ---
 
 document.addEventListener('DOMContentLoaded', function() {
   buildCategorySelect();
@@ -382,11 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.getElementById('lang-select').addEventListener('change', applyFilters);
-
-  document.getElementById('category-select').addEventListener('change', function() {
-    currentCategory = this.value;
-    applyFilters();
-  });
+  document.getElementById('category-select').addEventListener('change', function() { currentCategory = this.value; applyFilters(); });
 
   document.querySelectorAll('#time-tabs .tab').forEach(function(tab) {
     tab.addEventListener('click', function() {
@@ -406,20 +445,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  document.getElementById('discovery-refresh').addEventListener('click', function(e) {
-    e.stopPropagation();
-    renderDiscovery();
+  document.getElementById('discovery-refresh').addEventListener('click', function(e) { e.stopPropagation(); renderDiscovery(); });
+
+  // Detail overlay close: backdrop click
+  document.getElementById('detail-overlay').addEventListener('click', function(e) {
+    if (e.target === this) closeDetail();
+  });
+
+  // Esc to close
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && currentDetailRepo) { closeDetail(); }
+  });
+
+  // Hash change (browser back/forward)
+  window.addEventListener('hashchange', function() {
+    if (!currentDetailRepo) restoreFromHash();
   });
 
   var defaultTab = document.querySelector('#time-tabs .tab[data-time="' + currentTime + '"]');
   if (defaultTab) defaultTab.classList.add('active');
   else document.querySelector('#time-tabs .tab').classList.add('active');
 
-  if (window.location.hash) {
-    restoreFromHash();
-  } else {
-    applyFilters();
-  }
+  if (window.location.hash) { restoreFromHash(); }
+  else { applyFilters(); }
   renderDiscovery();
 });
 </script>
