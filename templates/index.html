@@ -246,7 +246,7 @@ function renderTable(repos) {
       '<td class="col-lang">' + langCell + '</td>' +
       '<td class="col-forks"><span class="num">' + fmt(r.forks) + '</span></td>' +
       '<td class="col-spd hide-mobile">' + spdHtml + '</td>' +
-      '<td class="col-topics hide-mobile">' + (r.topics && r.topics.length ? r.topics.slice(0, 4).map(function(t) { return '<span class="topic-tag">' + esc(t) + '</span>'; }).join(' ') : '<span class="no-lang">—</span>') + '</td>' +
+      '<td class="col-topics hide-mobile">' + (r.topics && r.topics.length ? r.topics.slice(0, 3).map(function(t) { return '<span class="topic-tag">' + esc(t) + '</span>'; }).join(' ') + (r.topics.length > 3 ? ' <span class="topic-more">+' + (r.topics.length - 3) + '</span>' : '') : '<span class="no-lang">—</span>') + '</td>' +
     '</tr>';
   }).join('');
 }
