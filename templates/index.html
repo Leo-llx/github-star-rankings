@@ -77,7 +77,7 @@
             <th class="col-lang">语言</th>
             <th class="col-forks">Forks<span class="term-tip" data-tip="把别人的代码复制到自己账号下，可以自由修改">?</span></th>
             <th class="col-spd hide-mobile">增速<span class="term-tip" data-tip="星标/天 — 项目从创建至今平均每天获得的星标数">?</span></th>
-            <th class="col-desc hide-mobile">描述</th>
+            <th class="col-topics hide-mobile">Topics</th>
           </tr>
         </thead>
         <tbody id="repo-tbody"></tbody>
@@ -246,7 +246,7 @@ function renderTable(repos) {
       '<td class="col-lang">' + langCell + '</td>' +
       '<td class="col-forks"><span class="num">' + fmt(r.forks) + '</span></td>' +
       '<td class="col-spd hide-mobile">' + spdHtml + '</td>' +
-      '<td class="col-desc hide-mobile">' + descShort + '</td>' +
+      '<td class="col-topics hide-mobile">' + (r.topics && r.topics.length ? r.topics.slice(0, 4).map(function(t) { return '<span class="topic-tag">' + esc(t) + '</span>'; }).join(' ') : '<span class="no-lang">—</span>') + '</td>' +
     '</tr>';
   }).join('');
 }
