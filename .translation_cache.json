@@ -997,5 +997,6 @@
   "A fully featured React components library": "功能齐全的 React 组件库",
   "冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。": "冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。",
   "Reorderable drag-and-drop lists for modern browsers and touch devices. No jQuery or framework required.": "适用于现代浏览器和触摸设备的可重新排序的拖放列表。不需要 jQuery 或框架。",
-  "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.": "自主编码代理作为SDK、IDE扩展或CLI助手。"
+  "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.": "自主编码代理作为SDK、IDE扩展或CLI助手。",
+  "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG": "📑 PageIndex ：无矢量、基于推理的RAG的文档索引"
 }
