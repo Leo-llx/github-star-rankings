@@ -319,13 +319,13 @@ function openDetail(name) {
           '<div class="dp-stat"><span class="dp-stat-num">#' + (ALL_REPOS.indexOf(repo) + 1) + '</span><span class="dp-stat-label">排名</span></div>' +
         '</div>' +
         // Demo link
-        (function() {' +
-          'var hasDemo = (repo.topics || []).some(function(t) { return ["website","demo","playground","web-app","webapp"].indexOf(t.toLowerCase()) !== -1; });' +
-          'var descUrl = (repo.description || "").match(/https?:\/\/\S+/);' +
-          'var demoUrl = descUrl ? descUrl[0] : repo.url;' +
-          'if (hasDemo || descUrl) return "<a href=\"" + esc(demoUrl) + "\" target=\"_blank\" rel=\"noopener\" class=\"dp-demo-btn\">在线体验 &rarr;</a>";' +
-          'return "";' +
-        '})() +
+        (function() {
+          var hasDemo = (repo.topics || []).some(function(t) { return ["website","demo","playground","web-app","webapp"].indexOf(t.toLowerCase()) !== -1; });
+          var descUrl = (repo.description || "").match(/https?:\/\/\S+/);
+          var demoUrl = descUrl ? descUrl[0] : repo.url;
+          if (hasDemo || descUrl) return "<a href=\"" + esc(demoUrl) + "\" target=\"_blank\" rel=\"noopener\" class=\"dp-demo-btn\">在线体验 &rarr;</a>";
+          return "";
+        })() +
       '</div>' +
     '</div>' +
 
