@@ -41,6 +41,7 @@ BASE_DIR = Path(__file__).resolve().parent
 TEMPLATES_DIR = BASE_DIR / "templates"
 OUTPUT_DIR = BASE_DIR / "output"
 CACHE_FILE = BASE_DIR / ".translation_cache.json"
+SNAPSHOT_FILE = BASE_DIR / ".star_snapshot.json"
 
 GITHUB_API = "https://api.github.com"
 SEARCH_ENDPOINT = f"{GITHUB_API}/search/repositories"
@@ -109,27 +110,64 @@ def fetch_repos(token: str, query: str, per_page: int, pages: int) -> list[dict]
     return all_items
 
 
+def load_snapshot() -> dict:
+    if SNAPSHOT_FILE.exists():
+        try:
+            return json.loads(SNAPSHOT_FILE.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def save_snapshot(repos: list[dict]) -> None:
+    snap = {}
+    for r in repos:
+        snap[r["name"]] = {"stars": r["stars"], "date": datetime.now(timezone.utc).strftime("%Y-%m-%d")}
+    SNAPSHOT_FILE.write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
 def process_repos(items: list[dict]) -> list[dict]:
+    prev = load_snapshot()
+    now = datetime.now(timezone.utc)
     repos = []
     for item in items:
+        name = item["full_name"]
+        stars = item["stargazers_count"]
+        created_str = item.get("created_at", "")
+        # Stars per day since creation
+        spd = 0
+        if created_str:
+            try:
+                created_dt = datetime.strptime(created_str[:10], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                days = max((now - created_dt).days, 1)
+                spd = round(stars / days, 1)
+            except (ValueError, TypeError):
+                pass
+        # 7-day delta from snapshot
+        delta_7d = 0
+        if name in prev:
+            delta_7d = stars - prev[name]["stars"]
         repos.append({
             "rank": 0,
-            "name": item["full_name"],
+            "name": name,
             "url": item["html_url"],
-            "stars": item["stargazers_count"],
+            "stars": stars,
             "language": item.get("language") or "Unknown",
             "description": (item.get("description") or "").replace("<", "&lt;").replace(">", "&gt;"),
-            "description_cn": "",  # filled later if --translate
+            "description_cn": "",
             "topics": item.get("topics", [])[:5],
             "forks": item["forks_count"],
             "open_issues": item["open_issues_count"],
-            "created_at": item["created_at"][:10] if item.get("created_at") else "",
+            "created_at": created_str[:10] if created_str else "",
             "pushed_at": item["pushed_at"][:10] if item.get("pushed_at") else "",
             "avatar": item["owner"]["avatar_url"] if item.get("owner") else "",
+            "stars_per_day": spd,
+            "star_delta_7d": delta_7d,
         })
     repos.sort(key=lambda r: r["stars"], reverse=True)
     for i, r in enumerate(repos):
         r["rank"] = i + 1
+    save_snapshot(repos)
     return repos
 
 

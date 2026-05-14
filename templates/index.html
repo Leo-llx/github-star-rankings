@@ -73,9 +73,10 @@
           <tr>
             <th class="col-rank">#</th>
             <th class="col-repo">仓库</th>
-            <th class="col-stars">星标</th>
+            <th class="col-stars">星标<span class="term-tip" data-tip="收藏+点赞，给喜欢的项目点星标">?</span></th>
             <th class="col-lang">语言</th>
-            <th class="col-forks">Forks</th>
+            <th class="col-forks">Forks<span class="term-tip" data-tip="把别人的代码复制到自己账号下，可以自由修改">?</span></th>
+            <th class="col-spd hide-mobile">增速<span class="term-tip" data-tip="星标/天 — 项目从创建至今平均每天获得的星标数">?</span></th>
             <th class="col-desc hide-mobile">描述</th>
           </tr>
         </thead>
@@ -218,6 +219,14 @@ function renderTable(repos) {
     var descShort = desc.length > 90 ? desc.slice(0, 90) + '...' : desc;
     var langCell = r.language && r.language !== 'Unknown'
       ? langDot(r.language) + esc(r.language) : '<span class="no-lang">—</span>';
+    var spdHtml = '';
+    if (r.stars_per_day) {
+      spdHtml = '<span class="velocity-up">+' + r.stars_per_day + '/天</span>';
+    }
+    var deltaHtml = '';
+    if (r.star_delta_7d > 0) {
+      deltaHtml = '<span class="velocity-up"> +' + fmt(r.star_delta_7d) + '</span>';
+    }
     return '<tr class="repo-row" data-repo="' + esc(r.name) + '" onclick="openDetail(\'' + esc(r.name) + '\')">' +
       '<td class="col-rank"><span class="rank-badge' + (i < 3 ? ' r' + (i+1) : '') + '">' + (i + 1) + '</span></td>' +
       '<td class="col-repo">' +
@@ -226,9 +235,10 @@ function renderTable(repos) {
         '</a>' +
         '<p class="repo-desc-mobile hide-desktop">' + descShort + '</p>' +
       '</td>' +
-      '<td class="col-stars"><span class="num">' + fmt(r.stars) + '</span></td>' +
+      '<td class="col-stars"><span class="num">' + fmt(r.stars) + deltaHtml + '</span></td>' +
       '<td class="col-lang">' + langCell + '</td>' +
       '<td class="col-forks"><span class="num">' + fmt(r.forks) + '</span></td>' +
+      '<td class="col-spd hide-mobile">' + spdHtml + '</td>' +
       '<td class="col-desc hide-mobile">' + descShort + '</td>' +
     '</tr>';
   }).join('');
@@ -304,10 +314,18 @@ function openDetail(name) {
         '<div class="dp-lang">' + langDot(repo.language) + esc(repo.language || 'Unknown') + '</div>' +
         '<div class="dp-stats">' +
           '<div class="dp-stat"><span class="dp-stat-num">' + fmt(repo.stars) + '</span><span class="dp-stat-label">星标</span></div>' +
+          '<div class="dp-stat"><span class="dp-stat-num">' + (repo.stars_per_day ? '+' + repo.stars_per_day + '/天' : '—') + '</span><span class="dp-stat-label">增速</span></div>' +
           '<div class="dp-stat"><span class="dp-stat-num">' + fmt(repo.forks) + '</span><span class="dp-stat-label">Forks</span></div>' +
-          '<div class="dp-stat"><span class="dp-stat-num">' + fmt(repo.open_issues || 0) + '</span><span class="dp-stat-label">Issues</span></div>' +
           '<div class="dp-stat"><span class="dp-stat-num">#' + (ALL_REPOS.indexOf(repo) + 1) + '</span><span class="dp-stat-label">排名</span></div>' +
         '</div>' +
+        // Demo link
+        (function() {' +
+          'var hasDemo = (repo.topics || []).some(function(t) { return ["website","demo","playground","web-app","webapp"].indexOf(t.toLowerCase()) !== -1; });' +
+          'var descUrl = (repo.description || "").match(/https?:\/\/\S+/);' +
+          'var demoUrl = descUrl ? descUrl[0] : repo.url;' +
+          'if (hasDemo || descUrl) return "<a href=\"" + esc(demoUrl) + "\" target=\"_blank\" rel=\"noopener\" class=\"dp-demo-btn\">在线体验 &rarr;</a>";' +
+          'return "";' +
+        '})() +
       '</div>' +
     '</div>' +
 
