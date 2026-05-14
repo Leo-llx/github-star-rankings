@@ -7,6 +7,7 @@
 <style>
 {{ css }}
 </style>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 <header class="header">
@@ -349,9 +350,8 @@ function openDetail(name) {
     // README
     '<div class="dp-section">' +
       '<h2>README</h2>' +
-      '<div class="dp-readme-wrap">' +
-        '<p class="dp-readme-info">GitHub 不允许嵌入外部页面，请在新标签页查看</p>' +
-        '<a href="' + esc(repo.url) + '#readme" target="_blank" rel="noopener" class="dp-readme-btn">在 GitHub 查看 README &rarr;</a>' +
+      '<div class="dp-readme-wrap" id="dp-readme">' +
+        '<p class="dp-readme-loading">加载 README 中...</p>' +
       '</div>' +
     '</div>' +
       '</div>' +
@@ -366,6 +366,63 @@ function openDetail(name) {
   document.getElementById('dp-back').addEventListener('click', closeDetail);
 
   window.location.hash = 'repo=' + encodeURIComponent(repo.name);
+
+  // Load README asynchronously
+  loadReadme(repo);
+}
+
+function loadReadme(repo) {
+  var container = document.getElementById('dp-readme');
+  if (!container || !window.marked) return;
+
+  var owner = repo.name.split('/')[0];
+  var repoName = repo.name.split('/')[1];
+
+  function showError() {
+    container.innerHTML = '<p class="dp-readme-info">无法加载 README（可能触发 API 限流）</p>' +
+      '<a href="' + esc(repo.url) + '#readme" target="_blank" rel="noopener" class="dp-readme-btn">在 GitHub 查看 README &rarr;</a>';
+  }
+
+  function render(md) {
+    try {
+      var html = window.marked.parse(md);
+      container.innerHTML = '<div class="dp-markdown">' + html + '</div>';
+    } catch(e) {
+      showError();
+    }
+  }
+
+  // Try GitHub API first
+  var apiUrl = 'https://api.github.com/repos/' + owner + '/' + repoName + '/readme';
+  fetch(apiUrl, { headers: { Accept: 'application/vnd.github.v3+json' } })
+    .then(function(r) {
+      if (!r.ok) throw new Error('API failed');
+      return r.json();
+    })
+    .then(function(data) {
+      var content = data.content;
+      var decoded = atob(content.replace(/\s/g, ''));
+      render(decoded);
+    })
+    .catch(function() {
+      // Fallback: raw.githubusercontent.com
+      fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/HEAD/README.md')
+        .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
+        .then(function(md) { render(md); })
+        .catch(function() {
+          // Last try: main branch
+          fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/main/README.md')
+            .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
+            .then(function(md) { render(md); })
+            .catch(function() {
+              // Try master branch
+              fetch('https://raw.githubusercontent.com/' + owner + '/' + repoName + '/master/README.md')
+                .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
+                .then(function(md) { render(md); })
+                .catch(showError);
+            });
+        });
+    });
 }
 
 function closeDetail() {

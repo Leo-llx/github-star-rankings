@@ -463,13 +463,20 @@ tr:last-child td { border-bottom: none; }
   background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 24px;
+  min-height: 120px;
+}
+.dp-readme-loading {
   text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+  padding: 30px 0;
 }
 .dp-readme-info {
   font-size: 12px;
   color: var(--text-faint);
   margin-bottom: 12px;
+  text-align: center;
 }
 .dp-readme-btn {
   display: inline-block;
@@ -482,6 +489,70 @@ tr:last-child td { border-bottom: none; }
   transition: background .15s;
 }
 .dp-readme-btn:hover { background: #4090e0; color: #fff; }
+
+/* Rendered Markdown */
+.dp-markdown {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text);
+  overflow-wrap: break-word;
+}
+.dp-markdown h1, .dp-markdown h2, .dp-markdown h3, .dp-markdown h4 {
+  margin: 18px 0 8px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 6px;
+}
+.dp-markdown h1 { font-size: 1.5em; }
+.dp-markdown h2 { font-size: 1.3em; }
+.dp-markdown h3 { font-size: 1.1em; }
+.dp-markdown p { margin: 8px 0; }
+.dp-markdown a { color: var(--link); }
+.dp-markdown code {
+  background: rgba(255,255,255,.06);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: .9em;
+}
+.dp-markdown pre {
+  background: rgba(0,0,0,.3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+.dp-markdown pre code {
+  background: none;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.dp-markdown ul, .dp-markdown ol {
+  padding-left: 24px;
+  margin: 8px 0;
+}
+.dp-markdown li { margin: 3px 0; }
+.dp-markdown img { max-width: 100%; border-radius: 4px; }
+.dp-markdown blockquote {
+  border-left: 3px solid var(--link);
+  padding: 4px 14px;
+  margin: 10px 0;
+  color: var(--text-dim);
+}
+.dp-markdown table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 13px;
+}
+.dp-markdown th, .dp-markdown td {
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  text-align: left;
+}
+.dp-markdown th { background: rgba(255,255,255,.04); font-weight: 600; }
 
 /* Empty state
    ============================================ */
