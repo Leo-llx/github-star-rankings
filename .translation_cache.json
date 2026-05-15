@@ -1001,5 +1001,7 @@
   "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG": "📑 PageIndex ：无矢量、基于推理的RAG的文档索引",
   "Agent skills for Obsidian. Teach your agent to use Markdown, Bases, JSON Canvas, and use the CLI.": "黑曜石的特工技能。教您的代理使用Markdown、Bases、JSON Canvas和使用CLI。",
   "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.": "适用于本地LLM的开源桌面应用程序。文本、视觉、工具调用、OpenAI/Anthropic兼容的API。100%私有。",
-  "Natural Language Processing for the next decade. Tokenization, Part-of-Speech Tagging, Named Entity Recognition, Syntactic & Semantic Dependency Parsing, Document Classification": "未来十年的自然语言处理。标记化、词性标记、命名实体识别、句法和语义依赖解析、文档分类"
+  "Natural Language Processing for the next decade. Tokenization, Part-of-Speech Tagging, Named Entity Recognition, Syntactic & Semantic Dependency Parsing, Document Classification": "未来十年的自然语言处理。标记化、词性标记、命名实体识别、句法和语义依赖解析、文档分类",
+  "A fast, simple & powerful blog framework, powered by Node.js.": "一个快速、简单和强大的博客框架，由Node.js提供支持。",
+  "Platform dedicated to building an open foundation for applied Artificial Intelligence, designed for people seeking production-ready AI systems they can truly control, extend and deploy anywhere.": "致力于为应用人工智能构建开放式基础的平台，专为寻求生产就绪的人工智能系统的人们而设计，他们可以在任何地方真正控制、扩展和部署。"
 }
