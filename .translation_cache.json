@@ -1003,5 +1003,6 @@
   "Open-source desktop app for local LLMs. Text, vision, tool-calling, OpenAI/Anthropic-compatible API. 100% private.": "适用于本地LLM的开源桌面应用程序。文本、视觉、工具调用、OpenAI/Anthropic兼容的API。100%私有。",
   "Natural Language Processing for the next decade. Tokenization, Part-of-Speech Tagging, Named Entity Recognition, Syntactic & Semantic Dependency Parsing, Document Classification": "未来十年的自然语言处理。标记化、词性标记、命名实体识别、句法和语义依赖解析、文档分类",
   "A fast, simple & powerful blog framework, powered by Node.js.": "一个快速、简单和强大的博客框架，由Node.js提供支持。",
-  "Platform dedicated to building an open foundation for applied Artificial Intelligence, designed for people seeking production-ready AI systems they can truly control, extend and deploy anywhere.": "致力于为应用人工智能构建开放式基础的平台，专为寻求生产就绪的人工智能系统的人们而设计，他们可以在任何地方真正控制、扩展和部署。"
+  "Platform dedicated to building an open foundation for applied Artificial Intelligence, designed for people seeking production-ready AI systems they can truly control, extend and deploy anywhere.": "致力于为应用人工智能构建开放式基础的平台，专为寻求生产就绪的人工智能系统的人们而设计，他们可以在任何地方真正控制、扩展和部署。",
+  "AI 低代码平台，「低代码 + 零代码」双模式驱动：低代码一键生成前后端代码，零代码 5 分钟搭建系统，AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领「AI 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，消除 Java 项目 80% 的重复工作，提效而不失灵活。": "AI 低代码平台，「低代码 + 零代码」双模式驱动：低代码一键生成前后端代码 ，零代码 5 分钟搭建系统， AI技能一句话画流程、设计表单、生成整套系统。内置AI聊天、知识库、流程编排、 MCP插件等 ，兼容主流大模型。引领「 AI 生成 → 在线配置 → 代码生成 → 手工合并- &gt; AI修改」开发模式 ，消除 Java 项目 80% 的重复工作，提效而不失灵活。"
 }
