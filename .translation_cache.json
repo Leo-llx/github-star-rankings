@@ -1007,5 +1007,8 @@
   "AI 低代码平台，「低代码 + 零代码」双模式驱动：低代码一键生成前后端代码，零代码 5 分钟搭建系统，AI Skills 一句话画流程、设计表单、生成整套系统。内置 AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领「AI 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，消除 Java 项目 80% 的重复工作，提效而不失灵活。": "AI 低代码平台，「低代码 + 零代码」双模式驱动：低代码一键生成前后端代码 ，零代码 5 分钟搭建系统， AI技能一句话画流程、设计表单、生成整套系统。内置AI聊天、知识库、流程编排、 MCP插件等 ，兼容主流大模型。引领「 AI 生成 → 在线配置 → 代码生成 → 手工合并- &gt; AI修改」开发模式 ，消除 Java 项目 80% 的重复工作，提效而不失灵活。",
   "🔥 Search, scrape, and clean the web for AI agents.": "🔥 搜索、抓取和清理网络上的人工智能代理。",
   "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Claude model through API": "将Gemini CLI、Antigravity、ChatGPT Codex、Claude Code、Grok Build包装为OpenAI/Gemini/Claude/Codex兼容的API服务，让您通过API享受免费的Gemini 3.1 Pro、GPT 5.5、Claude模型",
-  "LobeHub organizes your agents into 7×24 operation. It hires, schedules, reports on your entire AI team. You stay in charge — without staying online.": "LobeHub将您的座席组织成7x24操作。它会招聘、安排、报告您的整个人工智能团队。您无需保持在线即可掌控一切。"
+  "LobeHub organizes your agents into 7×24 operation. It hires, schedules, reports on your entire AI team. You stay in charge — without staying online.": "LobeHub将您的座席组织成7x24操作。它会招聘、安排、报告您的整个人工智能团队。您无需保持在线即可掌控一切。",
+  "the full-stack Vue framework": "全栈Vue框架",
+  "Wrap Gemini CLI, Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model through API": "将Gemini CLI、Antigravity、ChatGPT Codex、Claude Code、Grok Build包装为OpenAI/Gemini/Claude/Codex兼容的API服务，让您通过API享受免费的Gemini 3.1 Pro、GPT 5.5、Grok 4.3、Claude模型",
+  "Coding agent for DeepSeek models that runs in your terminal": "在您的终端中运行的DeepSeek模型的编码代理"
 }
