@@ -1024,5 +1024,6 @@
   "Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀": "快速、小巧、完全自主的人工智能个人助理基础设施，任何操作系统，任何平台—在任何地方部署，交换任何东西 🦀",
   "Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, and Gemini CLI": "Claude Code、Codex CLI、Cursor、OpenCode和Gemini CLI的多线程代理插件市场",
   "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.": "开源托管代理平台。将编码代理转变为真正的队友—分配任务、跟踪进度、复合技能。",
-  "Coding agent for open source, open weight models ": "开源、开放权重模型的编码代理"
+  "Coding agent for open source, open weight models ": "开源、开放权重模型的编码代理",
+  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, autonomously grows with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install (formerly chatgpt-on-wechat).": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自主成长。多机型，多渠道，轻量化，可扩展，单行安装（原微信聊天）。"
 }
