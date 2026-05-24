@@ -1023,5 +1023,6 @@
   "🎨 Local-first, open-source  Claude Design alternative. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Runs on Claude Code / Codex / Cursor / Gemini / OpenCode / Qwen / Copilot / Hermes / Kimi CLI.": "🎨 本地第一，开源Claude Design替代品。⚡19技能· ✨ 71品牌级设计系统🖼生成网络·桌面·移动原型·幻灯片·图像·视频· HyperFrames📦沙盒预览· HTML/PDF/PPTX/MP4导出在Claude Code/Codex/Cursor/Gemini/OpenCode/Qwen上 🤖运行",
   "Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀": "快速、小巧、完全自主的人工智能个人助理基础设施，任何操作系统，任何平台—在任何地方部署，交换任何东西 🦀",
   "Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, and Gemini CLI": "Claude Code、Codex CLI、Cursor、OpenCode和Gemini CLI的多线程代理插件市场",
-  "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.": "开源托管代理平台。将编码代理转变为真正的队友—分配任务、跟踪进度、复合技能。"
+  "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.": "开源托管代理平台。将编码代理转变为真正的队友—分配任务、跟踪进度、复合技能。",
+  "Coding agent for open source, open weight models ": "开源、开放权重模型的编码代理"
 }
