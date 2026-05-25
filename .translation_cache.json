@@ -1028,5 +1028,6 @@
   "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, autonomously grows with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install (formerly chatgpt-on-wechat).": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自主成长。多机型，多渠道，轻量化，可扩展，单行安装（原微信聊天）。",
   "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.": "由流行品牌设计系统进行的DESIGN.md文件分析的集合。将一个放入您的项目中，让编码代理生成匹配的UI。",
   "Agentic coding terminal. DeepSeek-first, multi-provider, cache-maximal, whale-themed. Five-locale UI, CN-region endpoint, CNB mirror.": "代理编码终端。DeepSeek-first ，多提供商，缓存最大，鲸鱼主题。Five-locale UI, CN-region endpoint, CNB mirror.",
-  "Multi functional app to find duplicates, empty folders, similar images etc.": "多功能应用程序，用于查找重复项、空文件夹、类似图像等。"
+  "Multi functional app to find duplicates, empty folders, similar images etc.": "多功能应用程序，用于查找重复项、空文件夹、类似图像等。",
+  "Agentic coding terminal. DeepSeek-first, multi-provider, cache-maximal, whale-themed. Five-locale UI + CN-region endpoints + CNB mirror.": "代理编码终端。DeepSeek-first ，多提供商，缓存最大，鲸鱼主题。Five-locale UI + CN-region端点+ CNB镜像。"
 }
