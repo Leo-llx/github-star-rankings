@@ -1057,5 +1057,6 @@
   "Self-hosted AI workspace. ": "自托管AI工作区。",
   "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.": "开始使用Kimi-K2.6、GLM-5.1、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma和其他型号。",
   "omo; the one and only agent harness for complex codebases. the pickaxe for complex software engineering. For your Codex, for your OpenCode": "omo ；复杂代码库的唯一代理线束。复杂软件工程的镐。为了您的Codex ，为了您的OpenCode",
-  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, autonomously grows with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自主成长。多机型，多渠道，轻量化，可扩展，单线安装。（原微信聊天）"
+  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, autonomously grows with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自主成长。多机型，多渠道，轻量化，可扩展，单线安装。（原微信聊天）",
+  "Installable GitHub library of 1,500+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes specialized plugins, installer CLI, bundles, workflows, and official/community skill collections.": "可安装的GitHub库，包含1,500多种代理技能，适用于Claude Code、Cursor、Codex CLI、Gemini CLI、Antigravity等。包括专用插件、安装程序CLI、捆绑包、工作流程和官方/社区技能集合。"
 }
