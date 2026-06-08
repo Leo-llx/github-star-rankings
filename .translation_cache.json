@@ -1066,5 +1066,7 @@
   "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled.": "SearXNG是一个免费的互联网元搜索引擎，汇总了来自各种搜索服务和数据库的结果。用户既不会被跟踪也不会被分析。",
   "omo/lazycodex; the one and only agent harness for complex codebases. the pickaxe for complex software engineering. For your Codex, for your OpenCode": "omo/lazycodex ；用于复杂代码库的唯一代理线束。用于复杂软件工程的镐。为了您的Codex ，为了您的OpenCode",
   "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active": "增强的ChatGPT克隆：功能代理、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI模型切换、消息搜索、代码解释器、langchain、DALL-E-3、OpenAPI操作、函数、安全多用户A",
-  "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol": "Agent和生成式UI的前端堆栈。React、Angular、Mobile、Slack等。AG-UI协议的制定者"
+  "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol": "Agent和生成式UI的前端堆栈。React、Angular、Mobile、Slack等。AG-UI协议的制定者",
+  "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.": "黑曜石的特工技能。教您的代理使用Obsidian CLI和开放格式，包括Markdown、Bases、JSON Canvas。",
+  "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary": "人工智能代理技能，研究Reddit、X、YouTube、HN、Polymarket和网络上的任何主题，然后合成基础摘要"
 }
