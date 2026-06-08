@@ -1068,5 +1068,9 @@
   "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active": "增强的ChatGPT克隆：功能代理、MCP、技能、DeepSeek、Anthropic、AWS、OpenAI、Responses API、Azure、Groq、o1、GPT-5、Mistral、OpenRouter、Vertex AI、Gemini、Artifacts、AI模型切换、消息搜索、代码解释器、langchain、DALL-E-3、OpenAPI操作、函数、安全多用户A",
   "The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of the AG-UI Protocol": "Agent和生成式UI的前端堆栈。React、Angular、Mobile、Slack等。AG-UI协议的制定者",
   "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.": "黑曜石的特工技能。教您的代理使用Obsidian CLI和开放格式，包括Markdown、Bases、JSON Canvas。",
-  "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary": "人工智能代理技能，研究Reddit、X、YouTube、HN、Polymarket和网络上的任何主题，然后合成基础摘要"
+  "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary": "人工智能代理技能，研究Reddit、X、YouTube、HN、Polymarket和网络上的任何主题，然后合成基础摘要",
+  "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.": "由代理管理的博物馆展览，采用Gajae-Code/LazyCodex在Rust建造，在没有人为干预的情况下开发和维护。",
+  "omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode": "omo/lazycodex ： tokenmaxxers的编码代理；复杂代码库的唯一代理线束。为了您的Codex ，为了您的OpenCode",
+  "🍺 The Package Manager for Everywhere": "适用🍺 于任何地方的套餐管理器",
+  "A next.js web application that integrates AI capabilities with draw.io diagrams. This app allows you to create, modify, and enhance diagrams through natural language commands and AI-assisted visualization.": "Next.js Web应用程序，将AI功能与draw.io图集成在一起。此应用程序允许您通过自然语言命令和人工智能辅助可视化来创建、修改和增强图表。"
 }
