@@ -1074,5 +1074,6 @@
   "🍺 The Package Manager for Everywhere": "适用🍺 于任何地方的套餐管理器",
   "A next.js web application that integrates AI capabilities with draw.io diagrams. This app allows you to create, modify, and enhance diagrams through natural language commands and AI-assisted visualization.": "Next.js Web应用程序，将AI功能与draw.io图集成在一起。此应用程序允许您通过自然语言命令和人工智能辅助可视化来创建、修改和增强图表。",
   "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI": "AI agent toolkit ：统一LLM API、agent loop、TUI、coding agent CLI",
-  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自我进化。多机型，多渠道，轻量化，可扩展，单线安装。（原微信聊天）"
+  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自我进化。多机型，多渠道，轻量化，可扩展，单线安装。（原微信聊天）",
+  "Ultralytics YOLOv5 in PyTorch &gt; ONNX &gt; CoreML &gt; TFLite": "PyTorch中的Ultralytics YOLOv5 &gt; ONNX &gt; CoreML &gt; TFLite"
 }
