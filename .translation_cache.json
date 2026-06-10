@@ -1077,5 +1077,7 @@
   "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自我进化。多机型，多渠道，轻量化，可扩展，单线安装。（原微信聊天）",
   "Ultralytics YOLOv5 in PyTorch &gt; ONNX &gt; CoreML &gt; TFLite": "PyTorch中的Ultralytics YOLOv5 &gt; ONNX &gt; CoreML &gt; TFLite",
   "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.": "从Anthropic - Claude Fable 5、Opus 4.8、Claude Code、Claude Design中提取系统提示。OpenAI - ChatGPT 5.5 Thinking ， GPT 5.5 Instant ， Codex。Google - Gemini 3.5 Flash、3.1 Pro、Antigravity。xAI - Grok、Cursor、Copilot、VS Code、Perplexity等。定期更新。",
-  "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites": "通过用户名从3000多个网站🕵️‍♂️收集个人档案"
+  "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites": "通过用户名从3000多个网站🕵️‍♂️收集个人档案",
+  "A lightweight coding agent for open models like Deepseek, Kimi, and Qwen": "适用于 Deepseek、Kimi 和 Qwen 等开放模型的轻量级编码代理",
+  "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.": "使用 tldraw SDK 在 React 中构建无限画布应用程序。全球最佳、最顶级代理推荐#1 五星级 SDK。"
 }
