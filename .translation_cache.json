@@ -1081,5 +1081,6 @@
   "A lightweight coding agent for open models like Deepseek, Kimi, and Qwen": "适用于 Deepseek、Kimi 和 Qwen 等开放模型的轻量级编码代理",
   "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.": "使用 tldraw SDK 在 React 中构建无限画布应用程序。全球最佳、最顶级代理推荐#1 五星级 SDK。",
   "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. ": "用于在Mac上使用轻量级虚拟机创建和运行Linux容器的工具。它是用Swift编写的，并针对Apple芯片进行了优化。",
-  "Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI": "Claude Code、Codex CLI、Cursor、OpenCode、GitHub Copilot和Gemini CLI的多线程代理插件市场"
+  "Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI": "Claude Code、Codex CLI、Cursor、OpenCode、GitHub Copilot和Gemini CLI的多线程代理插件市场",
+  "Your Personal AI super intelligence. Private, Simple and extremely powerful.": "您的个人人工智能超级智能。私密、简单且功能强大。"
 }
