@@ -1082,5 +1082,8 @@
   "Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.": "使用 tldraw SDK 在 React 中构建无限画布应用程序。全球最佳、最顶级代理推荐#1 五星级 SDK。",
   "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon. ": "用于在Mac上使用轻量级虚拟机创建和运行Linux容器的工具。它是用Swift编写的，并针对Apple芯片进行了优化。",
   "Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, and Gemini CLI": "Claude Code、Codex CLI、Cursor、OpenCode、GitHub Copilot和Gemini CLI的多线程代理插件市场",
-  "Your Personal AI super intelligence. Private, Simple and extremely powerful.": "您的个人人工智能超级智能。私密、简单且功能强大。"
+  "Your Personal AI super intelligence. Private, Simple and extremely powerful.": "您的个人人工智能超级智能。私密、简单且功能强大。",
+  "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, and Hermes Agent — fewer tokens, fewer tool calls, 100% local": "预索引的代码知识图，在代码更改时自动同步，适用于Claude Code、Codex、Gemini、Cursor、OpenCode、AntiGravity、Kiro和Hermes Agent —代币更少，工具调用更少， 100%本地",
+  "Open-source, community-driven agent harness": "开源、社区驱动的代理线束",
+  "Learn it. Build it. Ship it for others.": "学习它，构建它。为其他人运送。"
 }
