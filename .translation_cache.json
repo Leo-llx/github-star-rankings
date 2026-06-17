@@ -1092,5 +1092,7 @@
   "Academic Research Skills for Claude Code: research → write → review → revise → finalize": "Claude Code的学术研究技能：研究→撰写→评审→修订→最终确定",
   "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration": "GitNexus ：零服务器代码智能引擎- GitNexus是一个完全在浏览器中运行的客户端知识图创建器。放入git仓库（ Github、Gitlab、Azure、Local ）或ZIP文件中，获取带有内置Graph RAG Agent的交互式知识图。",
   "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬": "开源实时聊天、电子邮件支持、全渠道服务台。Intercom、Zendesk、Salesforce Service Cloud等的替代方案。 🔥💬",
-  "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.": "让您的人工智能代理看到整个互联网。阅读和搜索Twitter、Reddit、YouTube、GitHub、Bilibili、XiaoHongShu —一个CLI ，无API费用。"
+  "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.": "让您的人工智能代理看到整个互联网。阅读和搜索Twitter、Reddit、YouTube、GitHub、Bilibili、XiaoHongShu —一个CLI ，无API费用。",
+  "Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio.": "免费创建令人惊叹的演示。开源，无订阅，无水印，免费用于商业用途。Screen Studio的替代方案。",
+  "Use claude code and codex for free in the terminal, VSCode extension, and discord like OpenClaw (voice supported)": "在终端、VSCode扩展和OpenClaw （支持语音）等Discord中免费使用claude代码和codex"
 }
