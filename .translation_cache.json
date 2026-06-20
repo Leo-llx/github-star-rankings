@@ -1097,5 +1097,6 @@
   "Use claude code and codex for free in the terminal, VSCode extension, and discord like OpenClaw (voice supported)": "在终端、VSCode扩展和OpenClaw （支持语音）等Discord中免费使用claude代码和codex",
   "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.": "让你的人工智能代理像房间里最懒惰的高级开发人员一样思考。最好的代码是你从未写过的代码。",
   "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.": "在工具输出、日志、文件和RAG块到达LLM之前对其进行压缩。令牌减少60-95% ，答案相同。库、代理、MCP服务器。",
-  "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model through API": "将Antigravity、ChatGPT Codex、Claude Code、Grok Build包装为OpenAI/Gemini/Claude/Codex兼容的API服务，让您通过API享受免费的Gemini 3.1 Pro、GPT 5.5、Grok 4.3、Claude模型"
+  "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model through API": "将Antigravity、ChatGPT Codex、Claude Code、Grok Build包装为OpenAI/Gemini/Claude/Codex兼容的API服务，让您通过API享受免费的Gemini 3.1 Pro、GPT 5.5、Grok 4.3、Claude模型",
+  "Shannon is an autonomous, white-box AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.": "Shannon是一款适用于Web应用程序和API的自动化白盒AI探测器。它会分析您的源代码，识别攻击媒介，并在漏洞到达生产环境之前执行真正的漏洞利用来证明漏洞。"
 }
