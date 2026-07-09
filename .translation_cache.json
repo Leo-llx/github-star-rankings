@@ -1131,5 +1131,7 @@
   "Open-source AI job search: scan job portals, score listings A-F, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Gemini, Codex, OpenCode…)": "开源AI工作搜索：扫描工作门户网站、评分列表A-F、定制简历、跟踪应用程序—在您的AI编码CLI （ Claude Code、Gemini、Codex、OpenCode…… ）中本地运行",
   "Xray panel supporting multi-protocol multi-user expire day & traffic & IP limit (Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto) ": "Xray面板支持多协议多用户过期日、流量和IP限制（ Vmess、Vless、特洛伊木马、ShadowSocks、Wireguard、Hysteria、Tunnel、Mixed、HTTP、TUN、MTProto ）",
   "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.": "为本地模型上的私有AI应用程序提供完整的API层： RAG、技能、工具、MCP、文本到SQL等。适用于任何与OpenAI兼容的推理服务器。",
-  "小程序雷达：AI 驱动的小程序技术选型、趋势追踪和迁移诊断工具": "小程序雷达案例名称： AI 驱动的小程序技术选型、趋势追踪和迁移诊断工具"
+  "小程序雷达：AI 驱动的小程序技术选型、趋势追踪和迁移诊断工具": "小程序雷达案例名称： AI 驱动的小程序技术选型、趋势追踪和迁移诊断工具",
+  "Installable GitHub library of 1,935+ agentic skills for Claude Code, Cursor, Codex CLI, Autohand Code, Gemini CLI, Antigravity, and more. Includes specialized plugins, installer CLI, bundles, workflows, and official/community skill collections.": "可安装的GitHub库，包含1,935多种代理技能，适用于Claude Code、Cursor、Codex CLI、Autohand Code、Gemini CLI、Antigravity等。包括专用插件、安装程序CLI、捆绑包、工作流程和官方/社区技能集合。",
+  "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.": "Honkai的简单Python Pydantic模型： Star Rail从Mihomo API解析数据。"
 }
