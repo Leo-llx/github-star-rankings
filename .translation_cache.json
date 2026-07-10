@@ -1136,5 +1136,6 @@
   "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.": "Honkai的简单Python Pydantic模型： Star Rail从Mihomo API解析数据。",
   "【低代码迈入 v2.0】AI低代码平台，AI Skills 一句话生成整个系统；一键生成前后端代码甚至整个模块。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。": "【低代码迈入 v2.0】 AI低代码平台 ， AI技能一句话生成整个系统；一键生成前后端代码甚至整个模块。 AI技能一句话画流程、设计表单、生成报表、大屏。内置AI应用平台涵盖 ： AI聊天、知识库、流程编排、 MCP插件等 ，兼容主流大模型。引领 AI低代码「技能生成 → 在线配置 → 代码生成 → 手工合并- &gt; AI修改」开发模式 ，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
   "Build, run, and manage your own agent platform.": "构建、运行和管理您自己的代理平台。",
-  "Make AI do actual work. Swap the model anytime — keep everything you've built.": "让人工智能完成实际工作。随时更换模型—保留您构建的所有内容。"
+  "Make AI do actual work. Swap the model anytime — keep everything you've built.": "让人工智能完成实际工作。随时更换模型—保留您构建的所有内容。",
+  "Installable GitHub library of 1,900+ agentic skills for Claude Code, Cursor, Codex CLI, Autohand Code, Gemini CLI, Antigravity, and more. Includes specialized plugins, installer CLI, bundles, workflows, and official/community skill collections.": "包含1,900多种代理技能的可安装GitHub库，适用于Claude Code、Cursor、Codex CLI、Autohand Code、Gemini CLI、Antigravity等。包括专用插件、安装程序CLI、捆绑包、工作流程和官方/社区技能集合。"
 }
