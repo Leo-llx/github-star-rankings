@@ -1141,5 +1141,7 @@
   "Extracted system prompts from Anthropic - Claude Fable 5, Opus 4.8, Claude Code, Claude Design. OpenAI - ChatGPT GPT-5.6, Codex GPT-5.6, GPT-5.5. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.": "从Anthropic - Claude Fable 5、Opus 4.8、Claude Code、Claude Design中提取系统提示。OpenAI - ChatGPT GPT-5.6、Codex GPT-5.6、GPT-5.5。Google - Gemini 3.5 Flash、3.1 Pro、Antigravity。xAI - Grok、Cursor、Copilot、VS Code、Perplexity等。定期更新。",
   "LibreCode - A Ollama cursor like coding / Reversing Interface": "LibreCode -类似编码/反转接口的Ollama光标",
   "✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% | LeetCode 题解": "LeetCode by Go✅解决方案， 100%测试覆盖率，运行时优于100% | LeetCode 题解",
-  "Use claude code, codex or pi for free in the terminal, VSCode extension, and discord like OpenClaw (voice supported)": "在终端中免费使用claude代码、codex或pi、VSCode扩展和像OpenClaw这样的不和谐（支持语音）"
+  "Use claude code, codex or pi for free in the terminal, VSCode extension, and discord like OpenClaw (voice supported)": "在终端中免费使用claude代码、codex或pi、VSCode扩展和像OpenClaw这样的不和谐（支持语音）",
+  "18 Lessons to Get Started Building AI Agents": "开始构建人工智能代理的18个课程",
+  "A lightweight coding agent for open models like GLM 5.2, Deepseek, and Kimi": "适用于GLM 5.2、Deepseek和Kimi等开放型号的轻量级编码代理"
 }
