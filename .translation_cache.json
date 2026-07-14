@@ -1145,5 +1145,6 @@
   "18 Lessons to Get Started Building AI Agents": "开始构建人工智能代理的18个课程",
   "A lightweight coding agent for open models like GLM 5.2, Deepseek, and Kimi": "适用于GLM 5.2、Deepseek和Kimi等开放型号的轻量级编码代理",
   "A lightweight coding agent, optimized for open models like GLM, Deepseek, and Kimi": "轻量级编码代理，针对GLM、Deepseek和Kimi等开放模型进行了优化",
-  "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.": "在工具输出、日志、文件和RAG块到达LLM之前对其进行压缩。编码代理的令牌减少20% ， JSON的令牌减少60-95% ，答案相同。库、代理、MCP服务器。"
+  "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.": "在工具输出、日志、文件和RAG块到达LLM之前对其进行压缩。编码代理的令牌减少20% ， JSON的令牌减少60-95% ，答案相同。库、代理、MCP服务器。",
+  "Use claude code, codex or pi for free from the terminal, IDE, or you phone like OpenClaw (voice supported)": "从终端、IDE或您的电话（如OpenClaw ）免费使用claude代码、codex或pi （支持语音）"
 }
