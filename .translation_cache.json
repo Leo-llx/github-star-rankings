@@ -1143,5 +1143,6 @@
   "✅ Solutions to LeetCode by Go, 100% test coverage, runtime beats 100% | LeetCode 题解": "LeetCode by Go✅解决方案， 100%测试覆盖率，运行时优于100% | LeetCode 题解",
   "Use claude code, codex or pi for free in the terminal, VSCode extension, and discord like OpenClaw (voice supported)": "在终端中免费使用claude代码、codex或pi、VSCode扩展和像OpenClaw这样的不和谐（支持语音）",
   "18 Lessons to Get Started Building AI Agents": "开始构建人工智能代理的18个课程",
-  "A lightweight coding agent for open models like GLM 5.2, Deepseek, and Kimi": "适用于GLM 5.2、Deepseek和Kimi等开放型号的轻量级编码代理"
+  "A lightweight coding agent for open models like GLM 5.2, Deepseek, and Kimi": "适用于GLM 5.2、Deepseek和Kimi等开放型号的轻量级编码代理",
+  "A lightweight coding agent, optimized for open models like GLM, Deepseek, and Kimi": "轻量级编码代理，针对GLM、Deepseek和Kimi等开放模型进行了优化"
 }
