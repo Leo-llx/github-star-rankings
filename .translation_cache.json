@@ -1148,5 +1148,8 @@
   "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.": "在工具输出、日志、文件和RAG块到达LLM之前对其进行压缩。编码代理的令牌减少20% ， JSON的令牌减少60-95% ，答案相同。库、代理、MCP服务器。",
   "Use claude code, codex or pi for free from the terminal, IDE, or you phone like OpenClaw (voice supported)": "从终端、IDE或您的电话（如OpenClaw ）免费使用claude代码、codex或pi （支持语音）",
   "A coding agent for low-cost models": "低成本车型的编码代理",
-  "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.": "为每个AI代理提供一个本地控制平面：跨模型路由、融合新功能、编排工具并保持完全控制。"
+  "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.": "为每个AI代理提供一个本地控制平面：跨模型路由、融合新功能、编排工具并保持完全控制。",
+  "【低代码 V2.0】AI低代码平台，AI Skills 一句话生成整个系统；一键生成前后端代码甚至整个模块。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。": "【低代码 V2.0】 AI低代码平台 ， AI技能一句话生成整个系统；一键生成前后端代码甚至整个模块。 AI技能一句话画流程、设计表单、生成报表、大屏。内置AI应用平台涵盖 ： AI聊天、知识库、流程编排、 MCP插件等 ，兼容主流大模型。引领 AI低代码「技能生成 → 在线配置 → 代码生成 → 手工合并- &gt; AI修改」开发模式 ，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
+  "A cryptocurrency trading API with more than 100 crypto and prediction exchanges in JavaScript / TypeScript / Python / C# / PHP / Go / Java ": "一个加密货币交易API ，在JavaScript/TypeScript/Python/C #/PHP/Go/Java中拥有100多个加密和预测交易所",
+  "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。": "Sub2API 一站式开源中转服务，让 Claude Openai、 、Gemini、 Grok订阅统一接入 ，支持拼车共享双子座更高效分摊成本，原生工具无缝使用。"
 }
