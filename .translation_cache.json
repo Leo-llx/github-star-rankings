@@ -1159,5 +1159,6 @@
   "An AI prompt optimizer for writing better prompts and getting better AI results.": "人工智能提示优化器，用于编写更好的提示并获得更好的人工智能结果。",
   "Skills for Real Engineers. Straight from my .agents directory.": "真正工程师的技能。直接来自我的.agents目录。",
   "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.": "高性能代码智能MCP服务器。将代码库编入持久知识图表—以毫秒为单位的平均存储库。158种语言，子MS查询，令牌减少99 ％。单个静态二进制文件，零依赖关系。",
-  "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.": "开始使用Kimi-K2.6、GLM-5.2、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma和其他型号。"
+  "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.": "开始使用Kimi-K2.6、GLM-5.2、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma和其他型号。",
+  "AAS Core preview is the local, agent-first control plane for discovering, recommending, validating, and planning exact skill stacks, backed by 1,965+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core预览版是本地、代理优先的控制平面，用于发现、推荐、验证和规划确切的技能堆栈，由1,965多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。"
 }
