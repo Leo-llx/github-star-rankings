@@ -1162,5 +1162,6 @@
   "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.": "开始使用Kimi-K2.6、GLM-5.2、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma和其他型号。",
   "AAS Core preview is the local, agent-first control plane for discovering, recommending, validating, and planning exact skill stacks, backed by 1,965+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core预览版是本地、代理优先的控制平面，用于发现、推荐、验证和规划确切的技能堆栈，由1,965多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。",
   "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]": "最快、最轻的人工智能网关。使用Python SDK的Rust核心。调用100多个OpenAI （或本机）格式的LLM API ，包括成本跟踪、护栏、负载平衡和日志记录[Bedrock、Azure、OpenAI、Anthropic、OpenAI、VertexAI、vLLM、Nvidia NIM]",
-  "Official, Anthropic-managed directory of high quality Claude Code Plugins.": "由Anthropic管理的高质量Claude Code插件的官方目录。"
+  "Official, Anthropic-managed directory of high quality Claude Code Plugins.": "由Anthropic管理的高质量Claude Code插件的官方目录。",
+  "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 1,969+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由1,969多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。"
 }
