@@ -1167,5 +1167,6 @@
   "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.": "在一个协作工作区上构建Agentic工作流程、RAG管道以及丰富的AI模型和工具支持。部署在云、VPC或自托管上，因此团队无需重新构建堆栈即可从原型迁移到生产环境。",
   "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。使用自动化AI工作流程从主题或关键字生成高清短视频。",
   "Unsloth is a local UI for training and running Gemma 4, Qwen3.6, DeepSeek, Kimi, GLM and other models.": "Unsloth是一个本地UI ，用于训练和运行Gemma 4、Qwen3.6、DeepSeek、Kimi、GLM和其他模型。",
-  "A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / TypeScript / Python / C# / PHP / Go / Java ": "一个统一的交易API ，在JavaScript/TypeScript/Python/C #/PHP/Go/Java中拥有100多个加密货币交易所和预测市场"
+  "A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / TypeScript / Python / C# / PHP / Go / Java ": "一个统一的交易API ，在JavaScript/TypeScript/Python/C #/PHP/Go/Java中拥有100多个加密货币交易所和预测市场",
+  "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.": "将任何代码库及其文档、SQL架构、配置和PDF转换为可查询的知识图。Claude Code、Cursor、Codex和Gemini CLI的A/graphify技能：本地确定性AST解析，解释每个边缘，没有矢量存储。"
 }
