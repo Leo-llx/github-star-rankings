@@ -1169,5 +1169,6 @@
   "Unsloth is a local UI for training and running Gemma 4, Qwen3.6, DeepSeek, Kimi, GLM and other models.": "Unsloth是一个本地UI ，用于训练和运行Gemma 4、Qwen3.6、DeepSeek、Kimi、GLM和其他模型。",
   "A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / TypeScript / Python / C# / PHP / Go / Java ": "一个统一的交易API ，在JavaScript/TypeScript/Python/C #/PHP/Go/Java中拥有100多个加密货币交易所和预测市场",
   "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.": "将任何代码库及其文档、SQL架构、配置和PDF转换为可查询的知识图。Claude Code、Cursor、Codex和Gemini CLI的A/graphify技能：本地确定性AST解析，解释每个边缘，没有矢量存储。",
-  "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.": "PyTorch中的Ultralytics YOLOv5用于对象检测、实例分割、分类、训练和导出。"
+  "Ultralytics YOLOv5 in PyTorch for object detection, instance segmentation, classification, training, and export.": "PyTorch中的Ultralytics YOLOv5用于对象检测、实例分割、分类、训练和导出。",
+  "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)": "开源人工智能工作搜索：扫描工作门户网站，使用结构化A-F评分标准将房源评估为1.0-5.0分，定制您的简历，跟踪应用程序—在您的人工智能编码CLI （ Claude Code、Codex、OpenCode、Antigravity…… ）中本地运行"
 }
