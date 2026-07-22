@@ -1173,5 +1173,7 @@
   "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)": "开源人工智能工作搜索：扫描工作门户网站，使用结构化A-F评分标准将房源评估为1.0-5.0分，定制您的简历，跟踪应用程序—在您的人工智能编码CLI （ Claude Code、Codex、OpenCode、Antigravity…… ）中本地运行",
   "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io": "Claude Code、Codex、OpenCode、OpenClaw、Grok Build和Hermes Agent的跨平台桌面一体机助手。唯一官方网站： ccswitch.io",
   "Kronos: A Foundation Model for the Language of Financial Markets": "Kronos ：金融市场语言的基础模型",
-  "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.": "100多个人工智能代理、代理技能和RAG应用程序-免费开源。"
+  "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.": "100多个人工智能代理、代理技能和RAG应用程序-免费开源。",
+  "❄️ ChatGPT Desktop Application (Mac, Windows and Linux)": "❄️ ChatGPT桌面应用程序（ Mac、Windows和Linux ）",
+  "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 1,987+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由1,987多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。"
 }
