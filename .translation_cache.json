@@ -1181,5 +1181,6 @@
   "Use claude code, codex or pi for free from the terminal, IDE, or your phone like OpenClaw (voice supported)": "从终端、IDE或OpenClaw （支持语音）等手机免费使用claude代码、codex或pi",
   "The world's most flexible commerce platform for agents and developers": "面向代理商和开发人员的全球最灵活商务平台",
   "Official source code of FreeCAD, a free and opensource multiplatform 3D parametric modeler.": "FreeCAD的官方源代码， FreeCAD是一个免费的开源多平台3D参数化建模工具。",
-  "Lightpanda: the headless browser designed for AI and automation": "Lightpanda ：专为人工智能和自动化设计的无头浏览器"
+  "Lightpanda: the headless browser designed for AI and automation": "Lightpanda ：专为人工智能和自动化设计的无头浏览器",
+  "Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-5.6-Sol, Codex. Google - Gemini 3.5 Flash, 3.1 Pro, Antigravity. xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.": "从Anthropic - Claude Fable 5、Opus 5、Claude Design、Claude Code中提取系统提示。OpenAI - ChatGPT GPT-5.6-Sol ， Codex。Google - Gemini 3.5 Flash、3.1 Pro、Antigravity。xAI - Grok、Cursor、Copilot、VS Code、Perplexity等。定期更新。"
 }
