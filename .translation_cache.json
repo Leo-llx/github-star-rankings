@@ -1187,5 +1187,7 @@
   "bluetooth mesh chat, IRC vibes": "蓝牙网状聊天， IRC共鸣",
   "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors": "永不停止编码。免费MIT AI网关：一个端点， 290多个提供商（ 90多个免费） ， 500多个型号— Kimi ， Claude ， GPT ， OpenAI ， Gemini ， GLM ， DeepSeek ， MiniMax。适用于Claude Code、Codex、Cursor、OpenCode、Cline和Copilot。配额感知自动回退， RTK +穴居人压缩节省15-95%代币， MCP/A2A ，",
   "📚 从零开始构建大模型": "📚从零开始构建大模型",
-  "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.": "Project NOMAD是一个离线优先的知识和教育服务器。维基百科、成千上万的书籍、课程、地图和可选的本地人工智能，所有这些都运行在您拥有的硬件上，无需互联网。"
+  "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.": "Project NOMAD是一个离线优先的知识和教育服务器。维基百科、成千上万的书籍、课程、地图和可选的本地人工智能，所有这些都运行在您拥有的硬件上，无需互联网。",
+  "Unsloth is a local UI for training and running Kimi K3, Gemma 4, Qwen3.6, DeepSeek, GLM and other models.": "Unsloth是一个本地UI ，用于训练和运行Kimi K3、Gemma 4、Qwen3.6、DeepSeek、GLM和其他模型。",
+  "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.": "ORCA是ADE ，用于与一群并行代理商合作。使用您自己的订阅运行任何编码代理。可在桌面、移动和VPS上使用。"
 }
