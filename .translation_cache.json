@@ -1189,5 +1189,7 @@
   "📚 从零开始构建大模型": "📚从零开始构建大模型",
   "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.": "Project NOMAD是一个离线优先的知识和教育服务器。维基百科、成千上万的书籍、课程、地图和可选的本地人工智能，所有这些都运行在您拥有的硬件上，无需互联网。",
   "Unsloth is a local UI for training and running Kimi K3, Gemma 4, Qwen3.6, DeepSeek, GLM and other models.": "Unsloth是一个本地UI ，用于训练和运行Kimi K3、Gemma 4、Qwen3.6、DeepSeek、GLM和其他模型。",
-  "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.": "ORCA是ADE ，用于与一群并行代理商合作。使用您自己的订阅运行任何编码代理。可在桌面、移动和VPS上使用。"
+  "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.": "ORCA是ADE ，用于与一群并行代理商合作。使用您自己的订阅运行任何编码代理。可在桌面、移动和VPS上使用。",
+  "Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.": "Shannon是Web应用程序和API的AI pentester。它会分析您的源代码，识别攻击媒介，并在漏洞到达生产环境之前执行真正的漏洞利用来证明漏洞。",
+  "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API": "将Antigravity、ChatGPT Codex、Claude Code、Grok Build包装为OpenAI/Gemini/Claude/Codex兼容的API服务，让您通过API享受免费的Gemini 3.1 Pro、GPT 5.6 Series、Grok 4.5、Claude模型"
 }
