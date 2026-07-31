@@ -1192,5 +1192,6 @@
   "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.": "ORCA是ADE ，用于与一群并行代理商合作。使用您自己的订阅运行任何编码代理。可在桌面、移动和VPS上使用。",
   "Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies attack vectors, and executes real exploits to prove vulnerabilities before they reach production.": "Shannon是Web应用程序和API的AI pentester。它会分析您的源代码，识别攻击媒介，并在漏洞到达生产环境之前执行真正的漏洞利用来证明漏洞。",
   "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.6 Series, Grok 4.5, Claude model through API": "将Antigravity、ChatGPT Codex、Claude Code、Grok Build包装为OpenAI/Gemini/Claude/Codex兼容的API服务，让您通过API享受免费的Gemini 3.1 Pro、GPT 5.6 Series、Grok 4.5、Claude模型",
-  "开放式跨端跨框架解决方案，支持使用 React/Vue 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5/React Native 等应用。": "开放式跨端跨框架解决方案支持使用 React/Vue等框架来开发微信//京东/百度支付宝/字节跳动/QQ小程序/H5/React Native 等应用。"
+  "开放式跨端跨框架解决方案，支持使用 React/Vue 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5/React Native 等应用。": "开放式跨端跨框架解决方案支持使用 React/Vue等框架来开发微信//京东/百度支付宝/字节跳动/QQ小程序/H5/React Native 等应用。",
+  "Use Claude Code, Codex and Pi for free from your terminal, IDE, and phone like OpenClaw (voice supported)": "从您的终端、IDE和像OpenClaw这样的手机（支持语音）免费使用Claude Code、Codex和Pi"
 }
