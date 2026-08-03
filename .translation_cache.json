@@ -1201,5 +1201,7 @@
   "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated": "🌊 原始Agent元Harness。部署智能多玩家群体，协调自主工作流程，构建对话式人工智能系统。具有自适应记忆、自我学习智能、RAG集成和原生Claude Code/Codex/Hermes等功能集成",
   "符合nature论文学术表达和科研绘图的Skill": "符合自然论文学术表达和科研绘图的技能",
   "Agent skill that removes signs of AI-generated writing from text": "从文本中删除人工智能生成文字的迹象的代理技能",
-  "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,000+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由2,000多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。"
+  "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,000+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由2,000多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。",
+  "The context API to search, scrape, and interact with the web at scale. 🔥": "用于大规模搜索、抓取和与Web交互的上下文API。 🔥",
+  "免费大模型API，支持免费调用GPT、DeepSeek等主流模型，免费额度10000点，每日刷新！另付费价格最低官方1-2折！": "免费大模型API ，支持免费调用 GPT、 DeepSeek等主流模型 ，免费额度 10000点 ，每日刷新 ！另付费价格最低官方 1-2折 ！"
 }
