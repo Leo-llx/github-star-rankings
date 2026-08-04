@@ -1203,5 +1203,6 @@
   "Agent skill that removes signs of AI-generated writing from text": "从文本中删除人工智能生成文字的迹象的代理技能",
   "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,000+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由2,000多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。",
   "The context API to search, scrape, and interact with the web at scale. 🔥": "用于大规模搜索、抓取和与Web交互的上下文API。 🔥",
-  "免费大模型API，支持免费调用GPT、DeepSeek等主流模型，免费额度10000点，每日刷新！另付费价格最低官方1-2折！": "免费大模型API ，支持免费调用 GPT、 DeepSeek等主流模型 ，免费额度 10000点 ，每日刷新 ！另付费价格最低官方 1-2折 ！"
+  "免费大模型API，支持免费调用GPT、DeepSeek等主流模型，免费额度10000点，每日刷新！另付费价格最低官方1-2折！": "免费大模型API ，支持免费调用 GPT、 DeepSeek等主流模型 ，免费额度 10000点 ，每日刷新 ！另付费价格最低官方 1-2折 ！",
+  "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.": "您的个人AI助手；易于安装，部署在您自己的计算机或云上；支持多个聊天应用程序，具有易于扩展的功能。"
 }
