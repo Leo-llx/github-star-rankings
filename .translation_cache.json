@@ -1210,5 +1210,6 @@
   "Umami is a privacy-first analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place — no cookies, no tracking, self-hosted or in the cloud.": "Umami是一个以隐私为先的分析平台。流量、活动、行为、转化次数和收入集中在一个地方--无Cookie、无跟踪、自托管或云端。",
   "Glances an Eye on your system. A top/htop alternative for GNU/Linux, BSD, macOS and Windows operating systems.": "瞥一眼您的系统。GNU/Linux、BSD、macOS和Windows操作系统的顶级/htop替代品。",
   "Assign issues to Claude Code, Codex, Cursor, and 17 more coding agents like teammates — open-source and self-hostable.": "将问题分配给Claude Code、Codex、Cursor和另外17个编码代理，如团队成员--开源和自托管。",
-  "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.": "DeepTutor ：终身个性化辅导。https://deeptutor.info/。"
+  "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.": "DeepTutor ：终身个性化辅导。https://deeptutor.info/。",
+  "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,005+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由2,005 +代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。"
 }
