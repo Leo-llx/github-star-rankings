@@ -1215,5 +1215,6 @@
   "DeepSeek-native AI coding agent for your terminal. Engineered around prefix-cache stability — leave it running.": "为您的终端提供DeepSeek原生AI编码代理。围绕前缀缓存稳定性而设计—保持运行。",
   "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作": "一个开源、隐私至上、自托管的知识工作空间，人类和人工智能代理一起工作开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
   "The local UI to run and train text and diffusion models, including Kimi K3, Gemma 4, Qwen3.6, DeepSeek-V4, FLUX and more.": "用于运行和训练文本和扩散模型的本地UI ，包括Kimi K3、Gemma 4、Qwen3.6、DeepSeek-V4、FLUX等。",
-  "🔥 1Panel is a modern, open-source Linux server management panel and a lightweight AI management platform.": "🔥 1Panel是一个现代化的开源Linux服务器管理面板和轻量级AI管理平台。"
+  "🔥 1Panel is a modern, open-source Linux server management panel and a lightweight AI management platform.": "🔥 1Panel是一个现代化的开源Linux服务器管理面板和轻量级AI管理平台。",
+  "🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. Integrates with OpenTelemetry, LangChain, OpenAI SDK, LiteLLM, and more. 🍊YC W23 ": "🪢 开源AI工程平台： LLM EVALS、可观察性、指标、提示管理、操场、数据集。与OpenTelemetry、LangChain、OpenAI SDK、LiteLLM等集成。🍊YC W23"
 }
