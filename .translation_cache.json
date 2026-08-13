@@ -1226,5 +1226,7 @@
   "Full-stack web application template with FastAPI, React, SQLModel, PostgreSQL, Vite, Tailwind CSS, shadcn/ui, FastAPI Cloud, and Docker Compose.": "使用FastAPI、React、SQLModel、PostgreSQL、Vite、Tailwind CSS、shadcn/ui、FastAPI Cloud和Docker Compose的全栈Web应用程序模板。",
   "Comfortably monitor your network traffic 🕵️‍♂️": "轻松监控网络流量 🕵️‍♂️",
   "Never stop coding. Free MIT AI gateway: one endpoint, 330+ providers (90+ free), 1200+ models — Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 320+ contributors": "永不停止编码。免费的MIT AI网关：一个端点， 330多个提供商（ 90多个免费） ， 1200多个型号— Kimi ， Claude ， GPT ， Gemini ， GLM ， DeepSeek ， MiniMax。适用于Claude Code、Codex、Cursor、OpenCode、Cline和Copilot。配额感知自动回退， RTK +穴居人压缩节省15-95%代币， MCP/A2A ， Deskto",
-  "Elevate your AI research writing, no more tedious polishing ✨ ": "提升您的人工智能研究写作，不再繁琐的抛光 ✨"
+  "Elevate your AI research writing, no more tedious polishing ✨ ": "提升您的人工智能研究写作，不再繁琐的抛光 ✨",
+  "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation": "[EMNLP2025] LightRAG ：简单快速的检索-增强生成",
+  "DeepSeek Harness: Everything is a Plugin.": "DeepSeek线束：一切都是插件。"
 }
