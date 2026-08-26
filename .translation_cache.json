@@ -1257,5 +1257,7 @@
   "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management.": "用于聚合和分发的统一AI模型中心。它支持将各种LLM交叉转换为OpenAI兼容、Claude兼容或Gemini兼容的格式。用于个人和企业模型管理的集中式网关。",
   "Clone any website with one command using AI coding agents": "使用AI编码代理，只需一个命令即可克隆任何网站",
   "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.": "人工智能代理的自我进化上下文数据库。统一座席记忆、知识抹布和技能。",
-  "Data Engineering Zoomcamp is a free 9-week course on building production-ready data pipelines. Join the course here 👇🏼": "数据工程 Zoomcamp 是一门为期 9 周的免费课程，教你如何构建可用于生产环境的数据管道。点击此处加入课程👇🏼"
+  "Data Engineering Zoomcamp is a free 9-week course on building production-ready data pipelines. Join the course here 👇🏼": "数据工程 Zoomcamp 是一门为期 9 周的免费课程，教你如何构建可用于生产环境的数据管道。点击此处加入课程👇🏼",
+  "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。": "【低代码v2.0 ，一句话即可生成整个系统】企业级 AI低代码平台 ，一键生成前后端代码甚至整个系统。 AI技能一句话画流程、设计表单、生成报表、大屏。内置AI应用平台涵盖 ： AI聊天、知识库、流程编排、 MCP插件等 ，兼容主流大模型。引领 AI低代码「技能生成 → 在线配置 → 代码生成 → 手工合并- &gt; AI修改」开发模式 ，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
+  "dev tools, env vars, task runner": "开发工具，环境变量，任务运行器"
 }
