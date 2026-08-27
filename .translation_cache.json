@@ -1261,5 +1261,6 @@
   "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并-&gt;AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。": "【低代码v2.0 ，一句话即可生成整个系统】企业级 AI低代码平台 ，一键生成前后端代码甚至整个系统。 AI技能一句话画流程、设计表单、生成报表、大屏。内置AI应用平台涵盖 ： AI聊天、知识库、流程编排、 MCP插件等 ，兼容主流大模型。引领 AI低代码「技能生成 → 在线配置 → 代码生成 → 手工合并- &gt; AI修改」开发模式 ，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
   "dev tools, env vars, task runner": "开发工具，环境变量，任务运行器",
   "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local": "预索引的代码知识图，在代码更改时自动同步，适用于Claude Code、Codex、Gemini、Cursor、OpenCode、AntiGravity、Kiro、CoPilot和Hermes Agent —代币更少，工具调用更少， 100%本地",
-  "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)": "从您的终端、应用程序、IDE或像OpenClaw这样的手机（支持语音+ ToS友好）免费使用Claude Code、Codex、Pi和OpenCode等（ 13亿+免费令牌）"
+  "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)": "从您的终端、应用程序、IDE或像OpenClaw这样的手机（支持语音+ ToS友好）免费使用Claude Code、Codex、Pi和OpenCode等（ 13亿+免费令牌）",
+  "The Node.js version manager for Windows.": "Windows的Node.js版本管理器。"
 }
