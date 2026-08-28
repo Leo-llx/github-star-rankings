@@ -1262,5 +1262,8 @@
   "dev tools, env vars, task runner": "开发工具，环境变量，任务运行器",
   "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local": "预索引的代码知识图，在代码更改时自动同步，适用于Claude Code、Codex、Gemini、Cursor、OpenCode、AntiGravity、Kiro、CoPilot和Hermes Agent —代币更少，工具调用更少， 100%本地",
   "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)": "从您的终端、应用程序、IDE或像OpenClaw这样的手机（支持语音+ ToS友好）免费使用Claude Code、Codex、Pi和OpenCode等（ 13亿+免费令牌）",
-  "The Node.js version manager for Windows.": "Windows的Node.js版本管理器。"
+  "The Node.js version manager for Windows.": "Windows的Node.js版本管理器。",
+  "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, FLUX and more.": "运行和训练LLM和扩散模型的本地UI。支持GGUF、MLX、Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、FLUX等。",
+  "Skills for Designers and Engineers.": "设计师和工程师的技能。",
+  "the runtime your coding agents live on": "您的编码代理所在的运行时"
 }
