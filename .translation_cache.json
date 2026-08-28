@@ -1265,5 +1265,6 @@
   "The Node.js version manager for Windows.": "Windows的Node.js版本管理器。",
   "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, FLUX and more.": "运行和训练LLM和扩散模型的本地UI。支持GGUF、MLX、Qwen3.8、Kimi K3、MiniMax-H3、Gemma 4、FLUX等。",
   "Skills for Designers and Engineers.": "设计师和工程师的技能。",
-  "the runtime your coding agents live on": "您的编码代理所在的运行时"
+  "the runtime your coding agents live on": "您的编码代理所在的运行时",
+  "Beautiful, Modern & Opinionated Linux": "漂亮、现代且自以为是的Linux"
 }
