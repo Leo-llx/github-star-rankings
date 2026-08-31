@@ -1271,5 +1271,7 @@
   "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.": "来自官方开发团队和社区的1000多种代理技能的精选集合，与Claude Code、Codex、Gemini CLI、Cursor等兼容。",
   "Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG) ": "支持多协议多用户（ Vmess、Vless、特洛伊木马、ShadowSocks、Wireguard、Hysteria、Tunnel、Mixed、HTTP、TUN、MTProto، AmneziaWG ）",
   "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.": "美观、可验证的架构、工作流程、序列、数据流和生命周期图的代理技能--具有运动和清晰导出的自包含HTML。",
-  "AirLLM 70B inference with single 4GB GPU": "使用单个4GB GPU的AirLLM 70B推理"
+  "AirLLM 70B inference with single 4GB GPU": "使用单个4GB GPU的AirLLM 70B推理",
+  "Never stop coding. Free MIT AI gateway: one endpoint, 352 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 550+ contributors": "永不停止编码。免费MIT AI网关：一个端点， 352个提供商（ 150多个免费） ， 1200多个型号Kimi、Claude、GPT、Gemini、GLM、DeepSeek、MiniMax。适用于Claude Code、Codex、Cursor、OpenCode、Cline和Copilot。配额感知自动回退， RTK +穴居人压缩节省15-95%代币， MCP/A2A ，桌面/",
+  "The fully-stacked web framework": "完全堆栈的Web框架"
 }
