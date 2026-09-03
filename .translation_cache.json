@@ -1278,5 +1278,6 @@
   "The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.": "人工智能代理的内存层-用于人工智能代理和应用程序的嵌入式内存基础设施。持续存在的上下文。专为生产而构建。",
   "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from Claude Code, Codex and Cursor over MCP 🚀": "ToolJet AI的开源基础-用于内部工具、仪表板、业务应用程序、工作流程和AI代理的企业应用程序生成平台。可视化构建，从提示，或从MCP上的Claude Code、Codex和Cursor构建 🚀",
   "Local UI to run and train LLMs and diffusion models. Supports GGUF, MLX, Qwen3.8, DeepSeek-V4, MiniMax-H3, Gemma 4, FLUX and more.": "运行和训练LLM和扩散模型的本地UI。支持GGUF、MLX、Qwen3.8、DeepSeek-V4、MiniMax-H3、Gemma 4、FLUX等。",
-  "SGLang is a high-performance serving framework for large language models and multimodal models.": "SGLang是一个适用于大型语言模型和多模态模型的高性能服务框架。"
+  "SGLang is a high-performance serving framework for large language models and multimodal models.": "SGLang是一个适用于大型语言模型和多模态模型的高性能服务框架。",
+  "A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / TypeScript / Python / C# / PHP / Go / Java / Rust": "一个统一的交易API ，在JavaScript/TypeScript/Python/C #/PHP/Go/Java/Rust中拥有100多个加密交易所和预测市场"
 }
