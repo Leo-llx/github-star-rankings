@@ -1295,5 +1295,6 @@
   "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.": "Claude Code、Codex 和 Pi 的 38 种编辑图表类型。独立的 HTML + SVG。没有阴影。没有美人鱼污水。",
   "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.": "OmO ：只需在提示符后键入“mass ulw”关键字。现在你是图形工程的大师。",
   "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click": "开放式多座席互动课堂—只需点击一下，即可获得身临其境的多座席学习体验",
-  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自我进化。多代理、多模型、多渠道，轻量化、可扩展、单行安装。（原微信聊天）"
+  "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)": "开源超级人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自我进化。多代理、多模型、多渠道，轻量化、可扩展、单行安装。（原微信聊天）",
+  "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,115+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由2,115多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。"
 }
