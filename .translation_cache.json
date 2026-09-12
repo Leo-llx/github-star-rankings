@@ -1303,5 +1303,6 @@
   "GitNexus: The Zero-Server Code Intelligence Engine ": "GitNexus ：零服务器代码智能引擎",
   "LlamaIndex is the document processing platform for AI": "LlamaIndex是人工智能的文档处理平台",
   "🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.": "🪢 开源代理回避和可观察性：使用一个开放平台跟踪、评估和改进LLM应用程序。",
-  "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated": "🌊 原始代理线束。部署智能多玩家群体，协调自主工作流程，构建对话式人工智能系统。具有自适应记忆、自学习智能、联合、矢量RAG集成和本地Claude Code/Codex/Hermes等功能"
+  "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated": "🌊 原始代理线束。部署智能多玩家群体，协调自主工作流程，构建对话式人工智能系统。具有自适应记忆、自学习智能、联合、矢量RAG集成和本地Claude Code/Codex/Hermes等功能",
+  "OpenHuman is an open source agent harness with local-first memory, agent orchestration, and workflows": "OpenHuman是一个开源代理线束，具有本地优先内存、代理编排和工作流"
 }
