@@ -1334,5 +1334,6 @@
   "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.": "RustFS是一个开源的、兼容S3的高性能对象存储系统，支持与其他S3兼容平台（如MinIO和Ceph ）的迁移和共存。",
   "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.": "Anthropic - Claude Fable 5.1、Opus 5.5、Claude Design、Claude Code的记录系统提示。OpenAI - ChatGPT GPT-6-Astra ， Codex。Google - Gemini 3.8 Flash、3.1 Pro、Antigravity。xAI - Grok、Grok Bot、Cursor、Kimi等！定期更新。",
   "OpenHuman is the fastest, cheapest, most efficient open-source agent harness. Written in Rust": "OpenHuman是最快、最便宜、最有效的开源代理线束。用Rust编写",
-  "GitHub 汉化插件，GitHub 中文化界面。 (GitHub Translation To Chinese)": "GitHub 汉化插件， GitHub 中文化界面。 （ GitHub翻译成中文）"
+  "GitHub 汉化插件，GitHub 中文化界面。 (GitHub Translation To Chinese)": "GitHub 汉化插件， GitHub 中文化界面。 （ GitHub翻译成中文）",
+  "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key.": "适用于LLM和人工智能代理的开源网络爬虫和爬虫：任何网站都可以使用干净、LLM就绪的Markdown。自己运行，或使用一个密钥使用Crawl4AI Cloud。"
 }
