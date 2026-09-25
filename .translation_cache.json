@@ -1333,5 +1333,6 @@
   "🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev": "🕷️ 一个自适应Web抓取框架，可处理从单个请求到全面爬网的所有内容！不要害羞，在这里加入： https://discord.gg/EMgGbDceNQ并按照这里获取每日提示和技巧： https://x.com/Scrapling_dev",
   "RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.": "RustFS是一个开源的、兼容S3的高性能对象存储系统，支持与其他S3兼容平台（如MinIO和Ceph ）的迁移和共存。",
   "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.": "Anthropic - Claude Fable 5.1、Opus 5.5、Claude Design、Claude Code的记录系统提示。OpenAI - ChatGPT GPT-6-Astra ， Codex。Google - Gemini 3.8 Flash、3.1 Pro、Antigravity。xAI - Grok、Grok Bot、Cursor、Kimi等！定期更新。",
-  "OpenHuman is the fastest, cheapest, most efficient open-source agent harness. Written in Rust": "OpenHuman是最快、最便宜、最有效的开源代理线束。用Rust编写"
+  "OpenHuman is the fastest, cheapest, most efficient open-source agent harness. Written in Rust": "OpenHuman是最快、最便宜、最有效的开源代理线束。用Rust编写",
+  "GitHub 汉化插件，GitHub 中文化界面。 (GitHub Translation To Chinese)": "GitHub 汉化插件， GitHub 中文化界面。 （ GitHub翻译成中文）"
 }
