@@ -1336,5 +1336,7 @@
   "OpenHuman is the fastest, cheapest, most efficient open-source agent harness. Written in Rust": "OpenHuman是最快、最便宜、最有效的开源代理线束。用Rust编写",
   "GitHub 汉化插件，GitHub 中文化界面。 (GitHub Translation To Chinese)": "GitHub 汉化插件， GitHub 中文化界面。 （ GitHub翻译成中文）",
   "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key.": "适用于LLM和人工智能代理的开源网络爬虫和爬虫：任何网站都可以使用干净、LLM就绪的Markdown。自己运行，或使用一个密钥使用Crawl4AI Cloud。",
-  "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.": "TimesFM （时间序列基础模型）是由Google Research开发的用于时间序列预测的预训练时间序列基础模型。"
+  "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.": "TimesFM （时间序列基础模型）是由Google Research开发的用于时间序列预测的预训练时间序列基础模型。",
+  "💫 Toolkit to help you get started with SDD or any other process!": "帮助您开始使用SDD或任何其他流程的工💫具包！",
+  "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.": "最强大、模块化的扩散模型GUI、API和后端，具有图形/节点界面。世界上最快的本地推理引擎。"
 }
