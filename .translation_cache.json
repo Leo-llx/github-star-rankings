@@ -1340,5 +1340,6 @@
   "💫 Toolkit to help you get started with SDD or any other process!": "帮助您开始使用SDD或任何其他流程的工💫具包！",
   "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.": "最强大、模块化的扩散模型GUI、API和后端，具有图形/节点界面。世界上最快的本地推理引擎。",
   "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)": "从您的终端、应用程序、IDE或手机免费使用Claude Code、Codex、VSCode、Pi和OpenCode （以及其他6种线束） （ 13亿+免费令牌） ，现在从浏览器使用本机浏览器会话（多哈尼斯+多模型） ，如OpenClaw （支持语音+ ToS友好）",
-  "Hindsight: Agent Memory That Learns": "后见之明：学习的客服代表记忆"
+  "Hindsight: Agent Memory That Learns": "后见之明：学习的客服代表记忆",
+  "A personal timeline for quick notes. Write short memos, find them later by search, tag, or date. Open source and self-hosted.": "快速备注的个人时间表。撰写简短的备忘录，稍后通过搜索、标记或日期查找。开源和自托管。"
 }
