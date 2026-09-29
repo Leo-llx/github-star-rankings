@@ -1341,5 +1341,7 @@
   "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.": "最强大、模块化的扩散模型GUI、API和后端，具有图形/节点界面。世界上最快的本地推理引擎。",
   "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)": "从您的终端、应用程序、IDE或手机免费使用Claude Code、Codex、VSCode、Pi和OpenCode （以及其他6种线束） （ 13亿+免费令牌） ，现在从浏览器使用本机浏览器会话（多哈尼斯+多模型） ，如OpenClaw （支持语音+ ToS友好）",
   "Hindsight: Agent Memory That Learns": "后见之明：学习的客服代表记忆",
-  "A personal timeline for quick notes. Write short memos, find them later by search, tag, or date. Open source and self-hosted.": "快速备注的个人时间表。撰写简短的备忘录，稍后通过搜索、标记或日期查找。开源和自托管。"
+  "A personal timeline for quick notes. Write short memos, find them later by search, tag, or date. Open source and self-hosted.": "快速备注的个人时间表。撰写简短的备忘录，稍后通过搜索、标记或日期查找。开源和自托管。",
+  "Open-source AI job search agent: scan job portals, evaluate listings into a structured A-H report with a global 1-5 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)": "开源AI求职搜索代理：扫描工作门户网站，将房源评估成具有全球1-5分数的结构化A-H报告，定制您的简历，跟踪应用程序—在您的AI编码CLI （ Claude Code、Codex、OpenCode、Antigravity…… ）中本地运行",
+  "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.": "开源个人人工智能助手和代理线束。规划任务，运行工具和技能，凭借记忆和知识自我进化。多代理，多模型，多通道，轻量化，可扩展，单行安装。"
 }
