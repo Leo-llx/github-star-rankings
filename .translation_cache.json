@@ -1358,5 +1358,6 @@
   "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。": "即时提示| GPT Image 2/2.5 提示词与案例库， 530 + 个案例、20 +套工业级模板与可复用技能，新增 2.5 同提示词对比专区，附完整提示词与生成记录 ，持续更新。",
   "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.": "将任何想法、计划或代码库转换为漂亮的交互式图表。Claude Code、Codex等的代理技能。",
   "An open-source engine that turns continuous content streams into search and monitoring. Durable ingestion, hybrid search, alerts, and plugins for formats, models and business rules.": "一个将连续内容流转化为搜索和监控的开源引擎。持久的摄取、混合搜索、警报以及格式、模型和业务规则的插件。",
-  "The web framework for content-driven websites.": "内容驱动型网站的Web框架。"
+  "The web framework for content-driven websites.": "内容驱动型网站的Web框架。",
+  "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.": "将任何技术书籍PDF转化为Claude Code技能—随时准备在您工作时进行学习、参考和使用。"
 }
