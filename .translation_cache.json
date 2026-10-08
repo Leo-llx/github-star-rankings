@@ -1365,5 +1365,6 @@
   "Video.js v10 - open source media player framework for HTML and React.": "Video.js v10 -用于HTML和React的开源媒体播放器框架。",
   "Use Codex from Claude Code to review code or delegate tasks.": "使用Claude Code的Codex来查看代码或委派任务。",
   "Fully automatic censorship removal for language models": "语言模型的全自动审查删除",
-  "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0": "人工智能代理的817种结构化网络安全技能·映射到6个框架： MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF和MITRE F3 （打击欺诈） · agentskills.io标准·适用于Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI和20多个平台· 29个安全域·"
+  "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0": "人工智能代理的817种结构化网络安全技能·映射到6个框架： MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF和MITRE F3 （打击欺诈） · agentskills.io标准·适用于Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI和20多个平台· 29个安全域·",
+  "Open-source Rust agent engine and terminal client for Codewhale, with provider choice, tools, approvals and receipts.": "Codewhale的开源Rust代理引擎和终端客户端，提供供应商选择、工具、批准和收据。"
 }
