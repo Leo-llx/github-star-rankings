@@ -1368,5 +1368,10 @@
   "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0": "人工智能代理的817种结构化网络安全技能·映射到6个框架： MITRE ATT&CK、NIST CSF 2.0、MITRE ATLAS、D3FEND、NIST AI RMF和MITRE F3 （打击欺诈） · agentskills.io标准·适用于Claude Code、GitHub Copilot、Codex CLI、Cursor、Gemini CLI和20多个平台· 29个安全域·",
   "Open-source Rust agent engine and terminal client for Codewhale, with provider choice, tools, approvals and receipts.": "Codewhale的开源Rust代理引擎和终端客户端，提供供应商选择、工具、批准和收据。",
   "人生进阶指南 韩先凯的人生进阶指南 终身学习指南：学习、AI 协作、创业与成长。": "人生进阶指南 韩先凯的人生进阶指南 终身学习指南案例名称：学习、 AI 协作、创业与成长。",
-  "人生进阶指南 韩先凯的人生进阶指南 英语学习指南 离谱的人生 AI时代终身学习：AI、学习、创业与成长。": "人生进阶指南 韩先凯的人生进阶指南 英语学习指南 离谱的人生 AI时代终身学习 ： AI、学习、创业与成长。"
+  "人生进阶指南 韩先凯的人生进阶指南 英语学习指南 离谱的人生 AI时代终身学习：AI、学习、创业与成长。": "人生进阶指南 韩先凯的人生进阶指南 英语学习指南 离谱的人生 AI时代终身学习 ： AI、学习、创业与成长。",
+  "🐹 Keep your Mac clean, light, and running like new. Fast open-source CLI, plus a native Mac app.": "🐹 让您的Mac保持干净、明亮，并像新的一样运行。快速开源CLI ，外加原生Mac应用。",
+  "🤱🏻 Turn any website into a tiny, fast desktop app.": "🤱🏻 将任何网站转变为小巧、快速的桌面应用程序。",
+  "The biggest open source library of animated, interactive & fully customizable React and NextJS components for building memorable websites.": "最大的动画、交互式和完全可定制的React和NextJS组件开源库，用于构建令人难忘的网站。",
+  "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.": "最快、最便宜、最高效的开源代理线束。在$ 10 VPS上运行超过500个代理。",
+  "Reverse engineer anything with agents, from app behavior down to native binaries.": "使用代理对任何内容进行反向工程，从应用行为到本机二进制文件。"
 }
