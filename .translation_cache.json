@@ -1373,5 +1373,7 @@
   "🤱🏻 Turn any website into a tiny, fast desktop app.": "🤱🏻 将任何网站转变为小巧、快速的桌面应用程序。",
   "The biggest open source library of animated, interactive & fully customizable React and NextJS components for building memorable websites.": "最大的动画、交互式和完全可定制的React和NextJS组件开源库，用于构建令人难忘的网站。",
   "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.": "最快、最便宜、最高效的开源代理线束。在$ 10 VPS上运行超过500个代理。",
-  "Reverse engineer anything with agents, from app behavior down to native binaries.": "使用代理对任何内容进行反向工程，从应用行为到本机二进制文件。"
+  "Reverse engineer anything with agents, from app behavior down to native binaries.": "使用代理对任何内容进行反向工程，从应用行为到本机二进制文件。",
+  "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more": "适用于代理和开发人员的开源云。包括身份验证、数据库、存储、功能、消息、托管、实时、WAF等",
+  "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust": "纯Rust中Adobe Photoshop的开源洁净室重新实现"
 }
