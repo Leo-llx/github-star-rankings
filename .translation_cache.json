@@ -1387,5 +1387,7 @@
   "PhotoCraft: An open-source, photo editor written by scratch in pure Rust": "PhotoCraft ：用纯Rust编写的开源照片编辑器",
   "韩先凯的人生进阶指南 人生进阶指南 AI时代生存指南 英语学习指南 离谱的人生 AI AI时代终身学习：AI、学习、创业与成长。": "韩先凯的人生进阶指南 人生进阶指南 AI时代生存指南 英语学习指南 离谱的人生 AI时代终身学习 ： AI、学习、创业与成长。",
   "AirLLM 2.8T LLM inference with single 4GB GPU": "AirLLM 2.8T LLM推理，带单个4GB显卡",
-  "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.": "每月74亿个代币。34个免费LLM提供商。635个免费模型端点。全部在一个/v1端点后面，加上任何与OpenAI兼容的自定义端点。智能路由、自动故障转移、加密密钥。仅限个人实验。"
+  "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.": "每月74亿个代币。34个免费LLM提供商。635个免费模型端点。全部在一个/v1端点后面，加上任何与OpenAI兼容的自定义端点。智能路由、自动故障转移、加密密钥。仅限个人实验。",
+  "The open agent skills tool - npx skills": "开放式客服代表技能工具- npx技能",
+  "Tool for automatic PS5 executables porting to Linux and Windows": "用于自动将PS5可执行文件移植到Linux和Windows的工具"
 }
