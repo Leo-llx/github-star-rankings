@@ -1389,5 +1389,7 @@
   "AirLLM 2.8T LLM inference with single 4GB GPU": "AirLLM 2.8T LLM推理，带单个4GB显卡",
   "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.": "每月74亿个代币。34个免费LLM提供商。635个免费模型端点。全部在一个/v1端点后面，加上任何与OpenAI兼容的自定义端点。智能路由、自动故障转移、加密密钥。仅限个人实验。",
   "The open agent skills tool - npx skills": "开放式客服代表技能工具- npx技能",
-  "Tool for automatic PS5 executables porting to Linux and Windows": "用于自动将PS5可执行文件移植到Linux和Windows的工具"
+  "Tool for automatic PS5 executables porting to Linux and Windows": "用于自动将PS5可执行文件移植到Linux和Windows的工具",
+  "OpenDesign is the 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.": "OpenDesign是首个协作式AI设计代理工作区。本地优先和开源。与您的团队和人工智能代理一起创建原型、网站、应用程序、仪表板、演示文稿、图像和视频。在一个工作区中共享工作、交换反馈并一起迭代。",
+  "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages": "提供编码代理品味的代理技能：艺术指导、参考图像和浏览器检查，而不是通用AI页面"
 }
