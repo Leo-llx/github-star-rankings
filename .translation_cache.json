@@ -1391,5 +1391,7 @@
   "The open agent skills tool - npx skills": "开放式客服代表技能工具- npx技能",
   "Tool for automatic PS5 executables porting to Linux and Windows": "用于自动将PS5可执行文件移植到Linux和Windows的工具",
   "OpenDesign is the 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.": "OpenDesign是首个协作式AI设计代理工作区。本地优先和开源。与您的团队和人工智能代理一起创建原型、网站、应用程序、仪表板、演示文稿、图像和视频。在一个工作区中共享工作、交换反馈并一起迭代。",
-  "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages": "提供编码代理品味的代理技能：艺术指导、参考图像和浏览器检查，而不是通用AI页面"
+  "Agent skills that give coding agents taste: art direction, reference images and a browser check instead of generic AI pages": "提供编码代理品味的代理技能：艺术指导、参考图像和浏览器检查，而不是通用AI页面",
+  "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.": "第一个协作AI设计代理工作区。本地优先和开源。与您的团队和人工智能代理一起创建原型、网站、应用程序、仪表板、演示文稿、图像和视频。在一个工作区中共享工作、交换反馈并一起迭代。",
+  "A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, MQTTS, POP3, POP3S, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features": "用于使用URL语法传输数据的命令行工具和库，支持DICT、FILE、FTP、FTPS、GOPHER、GOPHER、HTTP、HTTPS、IMAP、IMAPS、LDAP、LDAPS、MQTT、MQTTS、POP3、POP3S、RTSP、SCP、SFTP、SMTP、SMTPS、TELNET、TFTP、WS和WSS。libcurl提供无数强大功能"
 }
