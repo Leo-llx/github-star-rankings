@@ -1397,5 +1397,7 @@
   "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selection, stack validation, and planning, backed by 2,600+ agentic skills. Includes CLI, local MCP, catalog, plugins, and Workbench.": "AAS Core是本地、代理优先的控制平面，用于完整的目录发现、代理拥有的选择、堆栈验证和规划，由2,600多种代理技能提供支持。包括CLI、本地MCP、目录、插件和Workbench。",
   "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.": "适用于AI浏览器代理的开源Python库，以及Browser Use Cloud ：隐形浏览器和托管代理API。",
   "🐹 Keep your Mac and PC clean, light, and running like new. Fast open-source CLI, plus native Mac and Windows apps.": "🐹 让您的Mac和PC保持干净、明亮，并像新的一样运行。快速开源CLI ，以及本机Mac和Windows应用程序。",
-  "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.": "开源LLM知识平台：将原始文档转化为可查询的RAG、自主推理代理和自我维护的Wiki。"
+  "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.": "开源LLM知识平台：将原始文档转化为可查询的RAG、自主推理代理和自我维护的Wiki。",
+  "Context7 Platform -- Up-to-date docs for AI agents": "Context7平台--人工智能代理的最新文档",
+  "Free and open source admin dashboard UI kit built on Bootstrap: 100+ pages, 6,000+ icons, dark mode, RTL.": "基于Bootstrap构建的免费开源管理仪表板UI套件： 100多个页面， 6,000多个图标，深色模式， RTL。"
 }
