@@ -1402,5 +1402,7 @@
   "Free and open source admin dashboard UI kit built on Bootstrap: 100+ pages, 6,000+ icons, dark mode, RTL.": "基于Bootstrap构建的免费开源管理仪表板UI套件： 100多个页面， 6,000多个图标，深色模式， RTL。",
   "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 162 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.": "高性能代码智能MCP服务器。将代码库编入持久知识图表—以毫秒为单位的平均存储库。162种语言，子MS查询，令牌减少99 ％。单个静态二进制文件，零依赖关系。",
   "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.": "通过与AI聊天来绘制和编辑draw.io图。Web应用程序、桌面应用程序和用于Claude Code、Cursor、Codex和VS Code的MCP服务器。",
-  "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.": "无代码RAG服务器，可使答案与您的文档保持同步。适用于8个矢量数据库。建于Pathway之上。"
+  "A no-code RAG server that keeps answers in sync with your documents. Works with 8 vector databases. Built on Pathway.": "无代码RAG服务器，可使答案与您的文档保持同步。适用于8个矢量数据库。建于Pathway之上。",
+  "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Codex). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.": "ORCA是与代理商（例如Grok Bot、Codex ）合作的地方。使用您自己的订阅运行任何编码代理。可在桌面、移动和远程运行时使用。",
+  "Turn any website into a lightweight desktop app with one command, on macOS, Windows and Linux.": "只需在macOS、Windows和Linux上使用一个命令，即可将任何网站转变为轻量级桌面应用程序。"
 }
