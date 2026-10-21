@@ -1418,5 +1418,6 @@
   "DuckDB is a high-performance analytical database system": "DuckDB是一个高性能的分析数据库系统",
   "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers": "ArtCraft是艺术家、设计师和电影制作人的特意制作引擎",
   "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.": "面向开发人员和人工智能代理的本地代码智能。使用CBM Lens、MCP工具、代理集成和变更感知测试选择，以永久图形连接代码、文档和基础设施。",
-  "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings": "用于多阶段安全审核的编码代理技能，具有经过独立验证的机器可读结果"
+  "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings": "用于多阶段安全审核的编码代理技能，具有经过独立验证的机器可读结果",
+  "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.": "Claude Code、Codex、GitHub Copilot、Cursor、Factory Droid、Qoder和Pi的编辑图设计。45种图类型。独立的HTML + SVG。没有阴影，没有美人鱼粪便。"
 }
