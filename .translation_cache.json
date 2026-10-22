@@ -1424,5 +1424,7 @@
   "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key ， DeepSeek就能使用包括 V4.1 Flash、 Kimi K3 在内的前沿模型——完全免费 ，你所不限量。要做的就是在dsh中安装这个插件：无需登录，无需注册，无需API key--前沿型号就在那里， DeepSeek V4.1 Flash和Kimi K3就是其中之一。完全免费，没有使用上限。",
   "中英双语终身学习指南：英语学习、AI 协作、真实项目与成长证据。": "中英双语终身学习指南案例名称：英语学习、 AI 协作、真实项目与成长证据。",
   "Open-source agent for the terminal written in Rust. Use any provider or model. Issues & PRs always welcome": "用Rust编写的终端开源代理。使用任何提供商或型号。始终欢迎问题和PR",
-  "A Programmer’s Guide to Longevity | Helping everyone live a longer, healthier, happier life. Available in 8 languages.": "《程序员长寿指南》|帮助每个人过上更长寿、更健康、更快乐的生活。提供8种语言版本。"
+  "A Programmer’s Guide to Longevity | Helping everyone live a longer, healthier, happier life. Available in 8 languages.": "《程序员长寿指南》|帮助每个人过上更长寿、更健康、更快乐的生活。提供8种语言版本。",
+  "The Prisma ORM: write your application in TypeScript with human-readable queries instead of SQL. Host your database on Prisma Postgres and your app on Prisma Compute.": "Prisma ORM ：使用人类可读的查询而不是SQL在TypeScript中编写应用程序。在Prisma Postgres上托管您的数据库，在Prisma Compute上托管您的应用程序。",
+  "Umami is a privacy-first web and product analytics platform. Traffic, campaigns, behavior, conversions, and revenue in one place. No cookies, no surveillance, self-hosted or in the cloud.": "Umami是一个以隐私为先的网络和产品分析平台。流量、营销活动、行为、转化次数和收入集中在一处。无Cookie、无监控、自托管或云端。"
 }
