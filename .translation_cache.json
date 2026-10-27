@@ -1436,5 +1436,6 @@
   "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request.": "非自回归系统1决策引擎。在100多种语言的单个转发通道中对任何文本进行键入选择、评分和是/否决定，路由器可为每个请求选择正确的检查点。",
   "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev": "🕷️ 最好的Web抓取框架，可处理从单个请求到全面爬网的所有内容！不要害羞，在这里加入： https://discord.gg/EMgGbDceNQ并按照这里获取每日提示和技巧： https://x.com/Scrapling_dev",
   "The self-improving agent platform": "自我完善的代理平台",
-  "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.": "Claude Code、Cursor和Codex的防AI倾斜设计技能。"
+  "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.": "Claude Code、Cursor和Codex的防AI倾斜设计技能。",
+  "Build and run agents you can see, understand and trust.": "构建和运行您可以看到、理解和信任的代理。"
 }
