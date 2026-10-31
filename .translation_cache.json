@@ -1448,5 +1448,6 @@
   "Your AI workspace for models, agents, and productivity.": "您的模型、代理和生产力的人工智能工作区。",
   "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io": "适用于Claude Code、Codex、OpenCode、DeepSeek Harness等的跨平台桌面一体机助手。唯一官方网站： ccswitch.io",
   "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and an application tracker. It helps you fill in each application; you press Submit. Runs locally in Codex, OpenCode and other AI CLIs, or as a Claude Code plugin.": "开源人工智能求职代理和求职者：扫描求职板，在申请前根据您的简历为每份工作打1-5分，定制适合ATS的简历和求职信，准备面试和申请跟踪器。它可以帮助您填写每个申请；您按提交。在Codex、OpenCod中本地运行",
-  "Your lightweight open-source personal agent.": "您的轻量级开源个人代理。"
+  "Your lightweight open-source personal agent.": "您的轻量级开源个人代理。",
+  "2,884+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "适用于Claude Code、Codex、Cursor和Gemini CLI的2,884多种可重用AI代理技能。AAS Core添加了本地目录发现、代理拥有的选择和计划预览。CLI、MCP和插件。"
 }
