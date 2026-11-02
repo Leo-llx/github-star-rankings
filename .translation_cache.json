@@ -1451,5 +1451,8 @@
   "Your lightweight open-source personal agent.": "您的轻量级开源个人代理。",
   "2,884+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "适用于Claude Code、Codex、Cursor和Gemini CLI的2,884多种可重用AI代理技能。AAS Core添加了本地目录发现、代理拥有的选择和计划预览。CLI、MCP和插件。",
   "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more": "无需培训的语言模型修改：消除审查、抑制SLOP、减少嘲讽等",
-  "🍃 number one JavaScript library for interactive maps 🇺🇦": "交互式地图的头🍃号JavaScript库 🇺🇦"
+  "🍃 number one JavaScript library for interactive maps 🇺🇦": "交互式地图的头🍃号JavaScript库 🇺🇦",
+  "RAGFlow is an agent-native database: a Retrieval-Augmented Generation (RAG) engine that grew into context infrastructure.": "RAGFlow是一个代理原生数据库：一个成长为上下文基础设施的检索增强生成(RAG)引擎。",
+  "🔥 1Panel is a modern, open-source Linux server management panel and a lightweight AI management platform. 1Panel 是专门为 AI 服务器打造的管理面板。": "🔥 1Panel是一款现代化的开源Linux服务器管理面板和轻量级AI管理平台。1Panel 是专门为 AI 服务器打造的管理面板。",
+  "SeaweedFS is a distributed storage system for object storage (S3), file systems, Iceberg table buckets, and Lance vector buckets, designed to handle billions of files with O(1) disk access and effortless horizontal scaling.": "SeaweedFS是一个分布式存储系统，用于对象存储(S3)、文件系统、Iceberg表存储桶和Lance矢量存储桶，旨在通过O (1)磁盘访问和轻松的水平扩展来处理数十亿个文件。"
 }
