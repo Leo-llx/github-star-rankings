@@ -1471,5 +1471,6 @@
   "A progressive TypeScript framework for Node.js backends: from a small API in one file to efficient, scalable, enterprise-grade systems 🚀": "用于Node.js后端的渐进式TypeScript框架：从一个文件中的小型API到高效、可扩展的企业级系统 🚀",
   "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perplexity, DeepSeek and 30+ others. Updated daily.": "泄露的ChatGPT、Claude、Gemini等系统提示。自2025年5月以来，每个流行聊天机器人的完整隐藏系统提示，每个版本。还有Anthropic Claude Code、OpenAI Codex、Google Antigravity、xAI Grok、Meta Muse、Moonshot Kimi、Alibaba Qwen、Z.ai GLM ZCode、MiniMax、Cursor、Perple",
   "🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, and running like new. Fast CLI, plus native Mac and Windows apps.": "🐹 开源Mac和PC清洁剂。保持机器清洁、轻便，并像新机器一样运行。快速CLI ，以及本机Mac和Windows应用程序。",
-  "This repository contains the Hugging Face Agents Course. ": "此存储库包含Hugging Face Agents课程。"
+  "This repository contains the Hugging Face Agents Course. ": "此存储库包含Hugging Face Agents课程。",
+  "PhotoCraft: An open-source photo editor written from scratch in pure Rust": "PhotoCraft ：用纯Rust从头开始编写的开源照片编辑器"
 }
