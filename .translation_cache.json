@@ -1472,5 +1472,6 @@
   "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perplexity, DeepSeek and 30+ others. Updated daily.": "泄露的ChatGPT、Claude、Gemini等系统提示。自2025年5月以来，每个流行聊天机器人的完整隐藏系统提示，每个版本。还有Anthropic Claude Code、OpenAI Codex、Google Antigravity、xAI Grok、Meta Muse、Moonshot Kimi、Alibaba Qwen、Z.ai GLM ZCode、MiniMax、Cursor、Perple",
   "🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, and running like new. Fast CLI, plus native Mac and Windows apps.": "🐹 开源Mac和PC清洁剂。保持机器清洁、轻便，并像新机器一样运行。快速CLI ，以及本机Mac和Windows应用程序。",
   "This repository contains the Hugging Face Agents Course. ": "此存储库包含Hugging Face Agents课程。",
-  "PhotoCraft: An open-source photo editor written from scratch in pure Rust": "PhotoCraft ：用纯Rust从头开始编写的开源照片编辑器"
+  "PhotoCraft: An open-source photo editor written from scratch in pure Rust": "PhotoCraft ：用纯Rust从头开始编写的开源照片编辑器",
+  "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "适用于Claude Code、Codex、Cursor和Gemini CLI的2,955多种可重用AI代理技能。AAS Core添加了本地目录发现、代理拥有的选择和计划预览。CLI、MCP和插件。"
 }
