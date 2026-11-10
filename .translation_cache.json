@@ -1473,5 +1473,6 @@
   "🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, and running like new. Fast CLI, plus native Mac and Windows apps.": "🐹 开源Mac和PC清洁剂。保持机器清洁、轻便，并像新机器一样运行。快速CLI ，以及本机Mac和Windows应用程序。",
   "This repository contains the Hugging Face Agents Course. ": "此存储库包含Hugging Face Agents课程。",
   "PhotoCraft: An open-source photo editor written from scratch in pure Rust": "PhotoCraft ：用纯Rust从头开始编写的开源照片编辑器",
-  "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "适用于Claude Code、Codex、Cursor和Gemini CLI的2,955多种可重用AI代理技能。AAS Core添加了本地目录发现、代理拥有的选择和计划预览。CLI、MCP和插件。"
+  "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "适用于Claude Code、Codex、Cursor和Gemini CLI的2,955多种可重用AI代理技能。AAS Core添加了本地目录发现、代理拥有的选择和计划预览。CLI、MCP和插件。",
+  "Lists of company wise questions. Every csv file in the companies directory corresponds to a list of questions on leetcode for a specific company based on the leetcode company tags. Updated as of 20 Oct, 2025": "公司明智问题清单。公司目录中的每个csv文件都对应于基于leetcode公司标签的特定公司的leetcode问题列表。更新日期： 2025年10月20日"
 }
