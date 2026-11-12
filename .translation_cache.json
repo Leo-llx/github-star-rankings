@@ -1480,5 +1480,6 @@
   "The self-managing agent platform": "自助管理代理平台",
   "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.": "每个代理的模型。一站式。从菜单栏访问 DeepSeek 上的 Codex 和 Kimi 上的 Claude Code。",
   "The best way to control Claude Code, Codex and more from any computer or phone": "从任何电脑或手机控制 Claude Code、Codex 等的最佳方式",
-  "An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line of it is yours to read.": "一款用 Rust 编写的开源终端编码代理。它适用于任何模型，可以将一个任务拆分给多个代理，并且每一行代码都可供您阅读。"
+  "An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line of it is yours to read.": "一款用 Rust 编写的开源终端编码代理。它适用于任何模型，可以将一个任务拆分给多个代理，并且每一行代码都可供您阅读。",
+  "10.1 billion tokens per month. 87 free LLM providers. 1,313 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.": "每月 101 亿个 token。87 家免费 LLM 提供商。1313 个免费模型端点。所有这些都位于一个 /v1 端点之后，外加任何自定义的 OpenAI 兼容端点。智能路由、自动故障转移、加密密钥。仅限个人试验。"
 }
