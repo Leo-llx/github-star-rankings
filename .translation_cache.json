@@ -1475,5 +1475,8 @@
   "PhotoCraft: An open-source photo editor written from scratch in pure Rust": "PhotoCraft ：用纯Rust从头开始编写的开源照片编辑器",
   "2,955+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "适用于Claude Code、Codex、Cursor和Gemini CLI的2,955多种可重用AI代理技能。AAS Core添加了本地目录发现、代理拥有的选择和计划预览。CLI、MCP和插件。",
   "Lists of company wise questions. Every csv file in the companies directory corresponds to a list of questions on leetcode for a specific company based on the leetcode company tags. Updated as of 20 Oct, 2025": "公司明智问题清单。公司目录中的每个csv文件都对应于基于leetcode公司标签的特定公司的leetcode问题列表。更新日期： 2025年10月20日",
-  "🪢 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.": "🪢 开源AI工程平台：基于OpenTelemetry构建的AI网关、代理可观察性、EVALS和提示/技能管理。为每个AI调用和每个代理提供一个开放平台。自助出租或使用Langfuse Cloud。"
+  "🪢 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.": "🪢 开源AI工程平台：基于OpenTelemetry构建的AI网关、代理可观察性、EVALS和提示/技能管理。为每个AI调用和每个代理提供一个开放平台。自助出租或使用Langfuse Cloud。",
+  "一款免费开源的 AI 低代码平台，也是 AI 时代构建复杂业务系统的开源基座！权限、多租户、工作流、报表、大屏、AI 知识库等通用能力开箱即用，AI 只需生成业务差异部分。AI Skills 一句话生成完整系统——建表、前后端代码、菜单权限、BPM 流程、表单、报表、大屏全自动。内置 AI 应用平台（聊天、知识库、流程编排、MCP），兼容主流大模型": "一款开源的AI低代码平台，也是AI时代构建复杂业务系统的开源仓库！权限、多机场、工作流、报表、大屏、AI知识库等流程通用能力开箱即用，AI替代生成业务差异部分。AI技能术语生成完整系统——建表、前交互代码、菜单权限、BPM、报表、报表、大屏报表。内置AI应用平台（免费聊天、知识库、编排、MCP），兼容主流大模型",
+  "The self-managing agent platform": "自助管理代理平台",
+  "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.": "每个代理的模型。一站式。从菜单栏访问 DeepSeek 上的 Codex 和 Kimi 上的 Claude Code。"
 }
