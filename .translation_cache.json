@@ -1483,5 +1483,6 @@
   "An open-source coding agent for your terminal, written in Rust. It works with any model, can split one task across several agents, and every line of it is yours to read.": "一款用 Rust 编写的开源终端编码代理。它适用于任何模型，可以将一个任务拆分给多个代理，并且每一行代码都可供您阅读。",
   "10.1 billion tokens per month. 87 free LLM providers. 1,313 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.": "每月 101 亿个 token。87 家免费 LLM 提供商。1313 个免费模型端点。所有这些都位于一个 /v1 端点之后，外加任何自定义的 OpenAI 兼容端点。智能路由、自动故障转移、加密密钥。仅限个人试验。",
   "Interoperable by design. Governed by you. Open-source, secure platform for messaging, voice, video and governed AI, built for defense and government.": "设计上具有互操作性。由您掌控。专为国防和政府部门打造的开源、安全平台，用于消息传送、语音、视频和受监管的AI。",
-  "The headless browser for AI agents and web scraping": "适用于 AI 代理和网页抓取的无头浏览器"
+  "The headless browser for AI agents and web scraping": "适用于 AI 代理和网页抓取的无头浏览器",
+  "Streamlit — The agent-native framework for data apps and dashboards.": "Streamlit — 用于数据应用程序和仪表板的代理原生框架。"
 }
