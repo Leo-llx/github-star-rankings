@@ -1486,5 +1486,11 @@
   "The headless browser for AI agents and web scraping": "适用于 AI 代理和网页抓取的无头浏览器",
   "Streamlit — The agent-native framework for data apps and dashboards.": "Streamlit — 用于数据应用程序和仪表板的代理原生框架。",
   "Free and open-source macOS menu bar toolkit.": "免费的开源 macOS 菜单栏工具包。",
-  "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.": "不受审查的开源 AI 视频平台替代方案 — 免费的 AI 图像和视频生成工作室，提供 800 多种模型（Flux、Midjourney、Kling、Sora、Veo）。无内容过滤。自托管，采用 MIT 许可证。"
+  "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.": "不受审查的开源 AI 视频平台替代方案 — 免费的 AI 图像和视频生成工作室，提供 800 多种模型（Flux、Midjourney、Kling、Sora、Veo）。无内容过滤。自托管，采用 MIT 许可证。",
+  "Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · APM · NPM · DBM · RUM · Synthetics · Cloud · AI · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfish · 800+ integrations": "全栈可观测性 · 指标 · 日志 · 跟踪 · 流 · 拓扑 · 基础设施 · APM · NPM · DBM · RUM · 合成 · 云 · AI · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfish · 800 多项集成",
+  "A coding agent for open models like Kimi K3.1 and GLM 5.3": "适用于 Kimi K3.1 和 GLM 5.3 等开放模型的编码代理",
+  "God's Eye View: a spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. Official site: godseyeview.ai": "上帝视角：一款浏览器中的间谍卫星模拟器，但数据却是真实的。在逼真的 3D 地球上实时显示开源空间情报。官方网站：godseyeview.ai",
+  "Turn Claude Code into a full game dev studio — 49 AI agents, 75 workflow skills, and a complete coordination system mirroring real studio hierarchy.": "将 Claude Code 打造为全功能游戏开发工作室——49 个 AI 代理、75 项工作流技能，以及一个完整协调系统，完美复现真实工作室的层级结构。",
+  "React Flow | Svelte Flow | Vue Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev), Svelte (https://svelteflow.dev) and Vue (https://vueflow.dev). Ready out-of-the-box and infinitely customizable.": "React Flow | Svelte Flow | Vue Flow - 用于使用 React (https://reactflow.dev)、Svelte (https://svelteflow.dev) 和 Vue (https://vueflow.dev) 构建基于节点的 UI 的强大开源库。开箱即用，可无限定制。",
+  "Craft Anything: understand how any software works, and craft your own.": "打造任何东西：了解任何软件的运作方式，并打造您自己的软件。"
 }
