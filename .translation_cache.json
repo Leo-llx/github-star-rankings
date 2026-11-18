@@ -1492,5 +1492,7 @@
   "God's Eye View: a spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe. Official site: godseyeview.ai": "上帝视角：一款浏览器中的间谍卫星模拟器，但数据却是真实的。在逼真的 3D 地球上实时显示开源空间情报。官方网站：godseyeview.ai",
   "Turn Claude Code into a full game dev studio — 49 AI agents, 75 workflow skills, and a complete coordination system mirroring real studio hierarchy.": "将 Claude Code 打造为全功能游戏开发工作室——49 个 AI 代理、75 项工作流技能，以及一个完整协调系统，完美复现真实工作室的层级结构。",
   "React Flow | Svelte Flow | Vue Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev), Svelte (https://svelteflow.dev) and Vue (https://vueflow.dev). Ready out-of-the-box and infinitely customizable.": "React Flow | Svelte Flow | Vue Flow - 用于使用 React (https://reactflow.dev)、Svelte (https://svelteflow.dev) 和 Vue (https://vueflow.dev) 构建基于节点的 UI 的强大开源库。开箱即用，可无限定制。",
-  "Craft Anything: understand how any software works, and craft your own.": "打造任何东西：了解任何软件的运作方式，并打造您自己的软件。"
+  "Craft Anything: understand how any software works, and craft your own.": "打造任何东西：了解任何软件的运作方式，并打造您自己的软件。",
+  "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.": "让您的客服代表更聪明的知识基础设施。通过一个 API 进行搜索、抓取并访问 550 多个数据提供商。",
+  "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.": "既然少数token就能搞定，为什么要用很多token呢？技能 + 编码代理的本地代理：答案更短，工具输出更小，每个原始内容均可恢复。"
 }
