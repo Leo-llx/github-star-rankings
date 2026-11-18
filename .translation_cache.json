@@ -1494,5 +1494,8 @@
   "React Flow | Svelte Flow | Vue Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev), Svelte (https://svelteflow.dev) and Vue (https://vueflow.dev). Ready out-of-the-box and infinitely customizable.": "React Flow | Svelte Flow | Vue Flow - 用于使用 React (https://reactflow.dev)、Svelte (https://svelteflow.dev) 和 Vue (https://vueflow.dev) 构建基于节点的 UI 的强大开源库。开箱即用，可无限定制。",
   "Craft Anything: understand how any software works, and craft your own.": "打造任何东西：了解任何软件的运作方式，并打造您自己的软件。",
   "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.": "让您的客服代表更聪明的知识基础设施。通过一个 API 进行搜索、抓取并访问 550 多个数据提供商。",
-  "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.": "既然少数token就能搞定，为什么要用很多token呢？技能 + 编码代理的本地代理：答案更短，工具输出更小，每个原始内容均可恢复。"
+  "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.": "既然少数token就能搞定，为什么要用很多token呢？技能 + 编码代理的本地代理：答案更短，工具输出更小，每个原始内容均可恢复。",
+  "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you can change down to the frame.": "您可以真正编辑的 AI 视频。HyperFrames 是一款免费的开源 AI 视频编辑器。描述任何视频，即可获得一个真正的项目，您可以对其进行逐帧修改。",
+  "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.": "🧠 两小时从 0 训出你的 64M 大模型。在 2 小时内从零开始训练您自己的 64M LLM。",
+  "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.": "使用您选择的任何 LLM 控制 Blender 3D 的社区插件。与官方Blender基金会无关。"
 }
