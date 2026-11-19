@@ -1497,5 +1497,8 @@
   "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.": "既然少数token就能搞定，为什么要用很多token呢？技能 + 编码代理的本地代理：答案更短，工具输出更小，每个原始内容均可恢复。",
   "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and get a real project you can change down to the frame.": "您可以真正编辑的 AI 视频。HyperFrames 是一款免费的开源 AI 视频编辑器。描述任何视频，即可获得一个真正的项目，您可以对其进行逐帧修改。",
   "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.": "🧠 两小时从 0 训出你的 64M 大模型。在 2 小时内从零开始训练您自己的 64M LLM。",
-  "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.": "使用您选择的任何 LLM 控制 Blender 3D 的社区插件。与官方Blender基金会无关。"
+  "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.": "使用您选择的任何 LLM 控制 Blender 3D 的社区插件。与官方Blender基金会无关。",
+  "Full-stack observability · Metrics · Logs · Traces · Flows · Topology · Infrastructure · APM · NPM · DBM · RUM · Synthetics · Cloud · AI SRE · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfish · 2000+ integrations": "全栈可观测性 · 指标 · 日志 · 跟踪 · 流 · 拓扑 · 基础设施 · APM · NPM · DBM · RUM · 合成监控 · 云 · AI SRE · OpenTelemetry · SNMP · NetFlow/IPFIX/sFlow · IPMI · Redfish · 2000+ 个集成",
+  "3,000+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.": "3,000 多项可重复使用的 AI 代理技能，适用于 Claude Code、Codex、Cursor 和 Gemini CLI。AAS Core 新增了本地目录发现、代理所有选择和计划预览功能。CLI、MCP 和插件。",
+  "Free and open source admin dashboard UI kit built on Bootstrap: 100+ pages, 6,500+ icons, dark mode, RTL.": "基于 Bootstrap 构建的免费开源管理仪表板 UI 套件：100 多个页面、6500 多个图标、深色模式、RTL。"
 }
