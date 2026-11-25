@@ -1511,5 +1511,6 @@
   "Uncensored AI Image & Video Generator — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.": "未经审查的 AI 图像和视频生成器 — 免费的 AI 图像和视频生成工作室，拥有 800 多个模型（Flux、Midjourney、Kling、Sora、Veo）。没有内容过滤器。自托管，麻省理工学院许可。",
   "TradingAgents: Towards Agentic Finance Research": "TradingAgents：迈向代理金融研究",
   "Fully autonomous AI Agents system capable of performing complex penetration testing tasks": "能够执行复杂渗透测试任务的完全自主式AI代理系统",
-  "Open-source Rust coding agent for terminal, web, and desktop. Any model, multi-agent fleets, MCP & plugins, OS sandboxing, and session receipts.": "适用于终端、网页和桌面的开源 Rust 编程代理。任何模型、多代理集群、MCP 和插件、操作系统沙盒以及会话收据。"
+  "Open-source Rust coding agent for terminal, web, and desktop. Any model, multi-agent fleets, MCP & plugins, OS sandboxing, and session receipts.": "适用于终端、网页和桌面的开源 Rust 编程代理。任何模型、多代理集群、MCP 和插件、操作系统沙盒以及会话收据。",
+  "Turn any idea, plan, or codebase into an interactive diagram or one-page answer: 10 diagram types, Architecture Diagnosis, Story video and PR walkthroughs. An Agent Skill for Claude Code, Codex, Cursor and more.": "将任何想法、计划或代码库转化为交互式图表或单页答案：10 种图表类型、架构诊断、故事视频和 PR 演练。适用于 Claude Code、Codex、Cursor 等的 Agent Skill。"
 }
