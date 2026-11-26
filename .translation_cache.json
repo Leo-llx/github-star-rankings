@@ -1513,5 +1513,6 @@
   "Fully autonomous AI Agents system capable of performing complex penetration testing tasks": "能够执行复杂渗透测试任务的完全自主式AI代理系统",
   "Open-source Rust coding agent for terminal, web, and desktop. Any model, multi-agent fleets, MCP & plugins, OS sandboxing, and session receipts.": "适用于终端、网页和桌面的开源 Rust 编程代理。任何模型、多代理集群、MCP 和插件、操作系统沙盒以及会话收据。",
   "Turn any idea, plan, or codebase into an interactive diagram or one-page answer: 10 diagram types, Architecture Diagnosis, Story video and PR walkthroughs. An Agent Skill for Claude Code, Codex, Cursor and more.": "将任何想法、计划或代码库转化为交互式图表或单页答案：10 种图表类型、架构诊断、故事视频和 PR 演练。适用于 Claude Code、Codex、Cursor 等的 Agent Skill。",
-  "Shared task board where people and AI coding agents work as teammates. Source-available, self-hostable.": "共享任务看板，让人们和 AI 编程代理作为队友一起工作。源代码可用，可自托管。"
+  "Shared task board where people and AI coding agents work as teammates. Source-available, self-hostable.": "共享任务看板，让人们和 AI 编程代理作为队友一起工作。源代码可用，可自托管。",
+  "Pool every plan you pay for — Claude, ChatGPT, Copilot, GLM Coding Plan, Kimi Code and more — and use them in any agent: Claude Code, Codex, Claude Desktop… When one runs out, the next takes over.": "将您付费的所有套餐（Claude、ChatGPT、Copilot、GLM Coding Plan、Kimi Code 等）集中起来，并在任何代理中使用：Claude Code、Codex、Claude Desktop……当一个套餐用完时，下一个套餐将接替使用。"
 }
