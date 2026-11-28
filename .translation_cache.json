@@ -1515,5 +1515,6 @@
   "Turn any idea, plan, or codebase into an interactive diagram or one-page answer: 10 diagram types, Architecture Diagnosis, Story video and PR walkthroughs. An Agent Skill for Claude Code, Codex, Cursor and more.": "将任何想法、计划或代码库转化为交互式图表或单页答案：10 种图表类型、架构诊断、故事视频和 PR 演练。适用于 Claude Code、Codex、Cursor 等的 Agent Skill。",
   "Shared task board where people and AI coding agents work as teammates. Source-available, self-hostable.": "共享任务看板，让人们和 AI 编程代理作为队友一起工作。源代码可用，可自托管。",
   "Pool every plan you pay for — Claude, ChatGPT, Copilot, GLM Coding Plan, Kimi Code and more — and use them in any agent: Claude Code, Codex, Claude Desktop… When one runs out, the next takes over.": "将您付费的所有套餐（Claude、ChatGPT、Copilot、GLM Coding Plan、Kimi Code 等）集中起来，并在任何代理中使用：Claude Code、Codex、Claude Desktop……当一个套餐用完时，下一个套餐将接替使用。",
-  "Vercel's official collection of agent skills": "Vercel 的官方代理技能合集"
+  "Vercel's official collection of agent skills": "Vercel 的官方代理技能合集",
+  "🙃   A delightful community-driven (with 2,600+ contributors) framework for managing your zsh configuration. Includes 300+ optional plugins (rails, git, macOS, hub, docker, homebrew, node, php, python, etc), 140+ themes to spice up your morning, and an auto-update tool that makes it easy to keep up with the latest updates from the community.": "🙃   一个由社区驱动（拥有 2,600 多名贡献者）的令人愉悦的框架，用于管理您的 zsh 配置。包含 300 多个可选插件（rails、git、macOS、hub、docker、homebrew、node、php、python 等）、140 多个主题，让您的早晨充满活力，以及一个自动更新工具，让您轻松跟上最新动态。"
 }
